@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "SlideNavigationController.h"
+#import "LeftMenuViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -16,6 +20,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard
+                                                                 instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
+    
+
+    
+    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
+    
+    // Creating a custom bar button for right menu
+    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [button setImage:[UIImage imageNamed:@"gear"] forState:UIControlStateNormal];
+    [button addTarget:[SlideNavigationController sharedInstance] action:@selector(toggleRightMenu) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [SlideNavigationController sharedInstance].rightBarButtonItem = rightBarButtonItem;
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Closed %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Opened %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Revealed %@", menu);
+    }];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
+        [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    application.statusBarStyle=UIStatusBarStyleLightContent;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+    
+    self.window.tintColor = [UIColor whiteColor];
     // Override point for customization after application launch.
     return YES;
 }
