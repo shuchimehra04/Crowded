@@ -43,6 +43,7 @@
 -(void)setUpSegmentControl
 {
     UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"map", @"list", nil]];
+    
     [statFilter setFrame:CGRectMake(0, -10,140, 35)];
     [statFilter addTarget:self action:@selector(segmentControlAction:) forControlEvents:UIControlEventValueChanged];
     [statFilter.layer setBorderColor:[UIColor whiteColor].CGColor];
@@ -50,7 +51,9 @@
     statFilter.layer.cornerRadius=5.0f;
     [statFilter setBackgroundColor:[UIColor blackColor]];
     [statFilter setSelectedSegmentIndex:0];
+    
     UIColor *tintcolor=[UIColor colorWithRed:36.0/255.0 green:167.0/255.0 blue:250.0/255.0 alpha:1.0];
+    
     [[statFilter.subviews objectAtIndex:0] setTintColor:tintcolor];
     
     [statFilter setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:16.0],NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];

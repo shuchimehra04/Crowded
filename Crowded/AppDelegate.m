@@ -9,9 +9,6 @@
 #import "AppDelegate.h"
 #import "SlideNavigationController.h"
 #import "LeftMenuViewController.h"
-
-
-
 @interface AppDelegate ()
 
 @end
@@ -23,10 +20,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
     
-    LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard
-                                                                 instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
-    
-
+    LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
     
     [SlideNavigationController sharedInstance].leftMenu = leftMenu;
     [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
@@ -53,12 +47,13 @@
         NSLog(@"Revealed %@", menu);
     }];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
-        [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     application.statusBarStyle=UIStatusBarStyleLightContent;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+
     
     self.window.tintColor = [UIColor whiteColor];
     // Override point for customization after application launch.

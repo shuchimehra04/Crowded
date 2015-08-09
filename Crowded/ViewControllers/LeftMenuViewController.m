@@ -50,6 +50,7 @@
 	view.backgroundColor = [UIColor clearColor];
 	return view;
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 40;
@@ -93,35 +94,35 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
-															 bundle: nil];
-	
-	UIViewController *vc ;
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+	UIViewController *viewController = nil ;
 	
 	switch (indexPath.row)
 	{
-		case 0:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
+        case 0:{
+			viewController = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
 			break;
-			
-		case 1:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ProfileViewController"];
+        }
+        case 1:{
+            UIStoryboard *tempStoryboard = [UIStoryboard storyboardWithName:@"temp" bundle:nil];
+			viewController = [tempStoryboard instantiateViewControllerWithIdentifier: @"AccountViewController"];
 			break;
-			
-		case 2:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
+        }
+        case 2:{
+			viewController = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
 			break;
-			
-		case 3:
-			[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
+        }
+        case 3:{
+            
 			[[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
 			return;
 			break;
+        }
 	}
 	
-	[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc
-															 withSlideOutAnimation:self.slideOutAnimationEnabled
-																	 andCompletion:nil];
+	[[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:viewController withSlideOutAnimation:self.slideOutAnimationEnabled andCompletion:nil];
 }
 
 @end
