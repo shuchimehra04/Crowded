@@ -10,14 +10,14 @@
 
 @interface AccountViewController ()
 
+
 @end
 
 @implementation AccountViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     
-    NSLog(@"%s",__func__);
+    [super viewDidLoad];
     
     UIImage *image = [UIImage imageNamed:@"nav_bg.png"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
@@ -35,10 +35,29 @@
     [UIButton makeCornerRadiusOfView:saveButton withRadius:3.0f];
 }
 
+-(IBAction)saveButtonTapped:(UIButton *)sender
+{
+    
+}
 
+#pragma mark - UITextfield Delegate Methods
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSLog(@"%s",__func__);
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLog(@"%s",__func__);
+}
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 

@@ -111,8 +111,10 @@
 			break;
         }
         case 2:{
-			viewController = [mainStoryboard instantiateViewControllerWithIdentifier: @"FriendsViewController"];
-			break;
+            UIStoryboard *tempStoryboard = [UIStoryboard storyboardWithName:@"temp" bundle:nil];
+            viewController = [tempStoryboard instantiateViewControllerWithIdentifier: @"SettingViewController"];
+            
+            break;
         }
         case 3:{
             

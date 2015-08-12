@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UIView+BorderColorWithRadius.h"
-@interface AccountViewController : UIViewController
+#import "Constant.h"
+@interface AccountViewController : UIViewController<UITextFieldDelegate>
 {
     IBOutlet UITextField *accountTitleTF;
     IBOutlet UITextField *emailAddressTF;
@@ -16,5 +17,9 @@
     IBOutlet UITextField *homeLocationTF;
     
     IBOutlet UIButton *saveButton;
+    IBOutlet UIScrollView *scrollView;
 }
+
+-(IBAction)saveButtonTapped:(UIButton *)sender;
+
 @end

@@ -27,10 +27,14 @@
     viewBounds=self.listTableView.bounds;
     
     [self.profileView addSubview:self.profileBundleView];
-    
-    
-    
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
+}
+
+
 -(void)setUpProfileView
 {
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProfileView" owner:self options:nil];
