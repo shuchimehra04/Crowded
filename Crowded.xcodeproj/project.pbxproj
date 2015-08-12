@@ -82,6 +82,8 @@
 		E56F3D381B76557000A49226 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56F3D371B76557000A49226 /* MapView.xib */; };
 		E56F3D3B1B76558500A49226 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56F3D3A1B76558500A49226 /* MapView.m */; };
 		E56F3D3D1B76567900A49226 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56F3D3C1B76567900A49226 /* MapKit.framework */; };
+		E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */; };
+		E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */; };
 		E5DD7A301B73CFA100E93C01 /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DD7A2F1B73CFA100E93C01 /* temp.storyboard */; };
 		E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD7A3B1B73D56800E93C01 /* ViewController.m */; };
 /* End PBXBuildFile section */
@@ -187,6 +189,9 @@
 		E56F3D391B76558500A49226 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		E56F3D3A1B76558500A49226 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		E56F3D3C1B76567900A49226 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomListingTableViewCell.h; sourceTree = "<group>"; };
+		E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomListingTableViewCell.m; sourceTree = "<group>"; };
+		E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomListingTableViewCell.xib; sourceTree = "<group>"; };
 		E5DD7A2F1B73CFA100E93C01 /* temp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
 		E5DD7A3A1B73D56800E93C01 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E5DD7A3B1B73D56800E93C01 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -420,6 +425,7 @@
 		E54CE8C31B75442700B92EDF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5A4B7181B7A787C005A58ED /* Custom TableViewCell */,
 				E54CE8C41B75444400B92EDF /* ProfileView.h */,
 				E54CE8C51B75444400B92EDF /* ProfileView.m */,
 				E54CE8C71B75445300B92EDF /* ProfileView.xib */,
@@ -428,6 +434,16 @@
 				E56F3D3A1B76558500A49226 /* MapView.m */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E5A4B7181B7A787C005A58ED /* Custom TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */,
+				E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */,
+				E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */,
+			);
+			path = "Custom TableViewCell";
 			sourceTree = "<group>";
 		};
 		E5DD7A311B73D56800E93C01 /* ViewControllers */ = {
@@ -561,6 +577,7 @@
 				929B976A1B77D47D00F43858 /* cancel_skill.png in Resources */,
 				929B975A1B77D47D00F43858 /* app_icon_180.png in Resources */,
 				E53663CB1B72838B005A1E92 /* LaunchScreen.xib in Resources */,
+				E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */,
 				929B97621B77D47D00F43858 /* bg2_1242x2016.png in Resources */,
 				929B97791B77D47D00F43858 /* select_skill_cross@2x.png in Resources */,
 				929B976E1B77D47D00F43858 /* computer.png in Resources */,
@@ -645,6 +662,7 @@
 			files = (
 				E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */,
 				E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */,
+				E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */,
 				929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */,
 				E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */,
 				E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */,

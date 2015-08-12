@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "LeftMenuViewController.h"
+#import "CustomListingTableViewCell.h"
 
 @implementation HomeViewController
 
@@ -23,10 +24,12 @@
 	self.limitPanGestureSwitch.on = ([SlideNavigationController sharedInstance].panGestureSideOffset == 0) ? NO : YES;
 	self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
     [self setUpSegmentControl];
-    //[self setUpProfileView];
+  [self setUpProfileView];
     viewBounds=self.listTableView.bounds;
     
     [self.profileView addSubview:self.profileBundleView];
+    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -72,6 +75,8 @@
 
     [self.view addSubview:self.mapView];
     [self.listTableView removeFromSuperview];
+    
+    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
     
 }
 -(void)segmentControlAction:(UISegmentedControl *)sender
@@ -213,10 +218,14 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier=@"Cell";
-    UITableViewCell *tableCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    CustomListingTableViewCell *cell=[self.listTableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
+    
+    
+    
+//    static NSString *cellIdentifier=@"Cell";
+//    UITableViewCell *tableCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     //tableCell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    return tableCell;
+    return cell;
 }
 @end
