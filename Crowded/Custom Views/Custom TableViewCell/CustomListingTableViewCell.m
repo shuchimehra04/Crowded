@@ -10,10 +10,22 @@
 NSString *const kCustomListingTableViewCellReuseID=@"kCustomListingTableViewCellReuseID";
 
 @implementation CustomListingTableViewCell
-
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+    if (self)
+    {
+        self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        //[self loadViews];
+       // [self constrainViews];
+    }
+    return self;
+}
 - (void)awakeFromNib {
     
-    [self.priceLAbel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"price_bg_image"]]];
+   // self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+
+    [self.priceLAbel setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"price_bg_image_list_screen"]]];
     
     // Initialization code
 }

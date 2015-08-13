@@ -25,11 +25,17 @@
 	self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
     [self setUpSegmentControl];
   [self setUpProfileView];
-    viewBounds=self.listTableView.bounds;
+    //viewBounds=self.listTableView.bounds;
+    
+    //viewBounds.size.width=self.view.bounds.size.width;
+    
+    
+    //viewBounds.size.width=self.listTableView.bounds.size.width;
+    
     
     [self.profileView addSubview:self.profileBundleView];
-    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
     
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -43,7 +49,17 @@
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProfileView" owner:self options:nil];
     UIView *profileNew = [nibObjects objectAtIndex:0];
     self.profileBundleView = profileNew;
-    [self.view addSubview:profileNew];
+    
+   CGRect Bounds=profileNew.frame;
+    
+    Bounds.size.width=self.view.frame.size.width;
+    
+   // Bounds.origin=self.profileView.frame.origin;
+   // [self.profileView setFrame:CGRectMake(self.profileView.frame.origin.x, self.profileView.frame.origin.y, Bounds.size.width, 74)];
+    
+    profileNew.frame=Bounds;
+    
+    [self.profileView addSubview:profileNew];
 
 }
 # pragma mark -- Segment Control Methods
@@ -76,7 +92,7 @@
     [self.view addSubview:self.mapView];
     [self.listTableView removeFromSuperview];
     
-    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
+
     
 }
 -(void)segmentControlAction:(UISegmentedControl *)sender
@@ -100,6 +116,7 @@
         MapView *mapView = [nibObjects objectAtIndex:0];
         [mapView setFrame:viewBounds];
         self.mapView=mapView;
+        self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         [self.view addSubview:self.mapView];
         
     }
@@ -111,6 +128,9 @@
         [self.listTableView setDelegate:self];
         [self.listTableView setDataSource:self];
         [self.listTableView setFrame:viewBounds];
+        self.listTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+
+        [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
         [self.view addSubview:self.listTableView];
         
     }
@@ -216,12 +236,18 @@
     return 4;
     
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 85.0f;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomListingTableViewCell *cell=[self.listTableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
     
+    CustomListingTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
     
-    
+    //cell.contentMode=UIViewContentModeRedraw;
+   // cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+
 //    static NSString *cellIdentifier=@"Cell";
 //    UITableViewCell *tableCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     //tableCell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];

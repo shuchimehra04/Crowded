@@ -2,9 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yzD-f0-X8n">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Left Menu View Controller-->
@@ -84,48 +82,48 @@
                         <viewControllerLayoutGuide type="bottom" id="hlj-nI-EFG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ndN-9A-aZa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HEe-NU-pvT">
-                                <rect key="frame" x="0.0" y="66" width="600" height="394"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HEe-NU-pvT">
+                                <rect key="frame" x="0.0" y="66" width="414" height="522"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="522" id="bc2-3L-xP7"/>
+                                </constraints>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="c91-Hr-nnr" id="n4z-9T-toE"/>
                                     <outlet property="delegate" destination="c91-Hr-nnr" id="ETG-MJ-yIQ"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8B-IK-2rk">
-                                <rect key="frame" x="-4" y="462" width="608" height="74"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E8B-IK-2rk">
+                                <rect key="frame" x="0.0" y="588" width="414" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="Gx1-ex-FcN"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6n-KX-90v">
-                                <rect key="frame" x="-4" y="536" width="608" height="64"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K6n-KX-90v">
+                                <rect key="frame" x="0.0" y="662" width="414" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="jNw-oq-gd7"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="K6n-KX-90v" secondAttribute="trailing" constant="-20" id="1U4-M5-Dlp"/>
-                            <constraint firstItem="E8B-IK-2rk" firstAttribute="leading" secondItem="ndN-9A-aZa" secondAttribute="leadingMargin" constant="-20" id="Fba-Xd-F7E"/>
-                            <constraint firstItem="HEe-NU-pvT" firstAttribute="top" secondItem="bd2-5V-VUW" secondAttribute="bottom" id="Oxf-ls-deC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="E8B-IK-2rk" secondAttribute="trailing" constant="-20" id="Xom-on-sEg"/>
-                            <constraint firstItem="K6n-KX-90v" firstAttribute="top" secondItem="E8B-IK-2rk" secondAttribute="bottom" id="cB5-OT-xeU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HEe-NU-pvT" secondAttribute="trailing" constant="-20" id="cSn-Kx-OTc"/>
-                            <constraint firstItem="E8B-IK-2rk" firstAttribute="top" secondItem="HEe-NU-pvT" secondAttribute="bottom" id="dtK-6t-xWE"/>
-                            <constraint firstItem="HEe-NU-pvT" firstAttribute="leading" secondItem="ndN-9A-aZa" secondAttribute="leadingMargin" constant="-20" id="qTd-gv-C1X"/>
-                            <constraint firstItem="K6n-KX-90v" firstAttribute="leading" secondItem="ndN-9A-aZa" secondAttribute="leadingMargin" constant="-20" id="uFW-7g-9dY"/>
-                            <constraint firstItem="hlj-nI-EFG" firstAttribute="top" secondItem="K6n-KX-90v" secondAttribute="bottom" id="uJY-ME-uMj"/>
+                            <constraint firstItem="K6n-KX-90v" firstAttribute="top" secondItem="E8B-IK-2rk" secondAttribute="bottom" id="0p8-un-yUZ"/>
+                            <constraint firstAttribute="trailing" secondItem="HEe-NU-pvT" secondAttribute="trailing" id="56i-DW-IEc"/>
+                            <constraint firstItem="E8B-IK-2rk" firstAttribute="top" secondItem="HEe-NU-pvT" secondAttribute="bottom" id="6hy-2K-4uW"/>
+                            <constraint firstItem="hlj-nI-EFG" firstAttribute="top" secondItem="K6n-KX-90v" secondAttribute="bottom" id="92h-cR-Si9"/>
+                            <constraint firstItem="HEe-NU-pvT" firstAttribute="top" secondItem="bd2-5V-VUW" secondAttribute="bottom" constant="2" id="Gir-hm-xlz"/>
+                            <constraint firstItem="HEe-NU-pvT" firstAttribute="leading" secondItem="ndN-9A-aZa" secondAttribute="leading" id="j1a-eU-rny"/>
+                            <constraint firstItem="K6n-KX-90v" firstAttribute="leading" secondItem="ndN-9A-aZa" secondAttribute="leading" id="kNa-UZ-faP"/>
+                            <constraint firstAttribute="trailing" secondItem="K6n-KX-90v" secondAttribute="trailing" id="xY9-AQ-Qnm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AQ5-cu-6Bz"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <connections>
                         <outlet property="bannerView" destination="K6n-KX-90v" id="uwF-wr-9QH"/>
                         <outlet property="listTableView" destination="HEe-NU-pvT" id="GWi-ZJ-xzk"/>

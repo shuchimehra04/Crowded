@@ -68,6 +68,7 @@
 		92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEA1B7A725100B85010 /* create_account@2x.png */; };
 		92F4CFEE1B7A725100B85010 /* create_account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEB1B7A725100B85010 /* create_account@3x.png */; };
 		92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F5B7AA1B791F4200B111E8 /* SettingViewController.m */; };
+		E51C3CC21B7D08AF007DF1BF /* uber_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E51C3CC11B7D08AF007DF1BF /* uber_logo.png */; };
 		E53663BA1B72838A005A1E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663B91B72838A005A1E92 /* main.m */; };
 		E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663BC1B72838A005A1E92 /* AppDelegate.m */; };
 		E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53663BE1B72838A005A1E92 /* Crowded.xcdatamodeld */; };
@@ -166,6 +167,7 @@
 		92F5B7A71B79195F00B111E8 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		92F5B7A91B791F4200B111E8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		92F5B7AA1B791F4200B111E8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E51C3CC11B7D08AF007DF1BF /* uber_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uber_logo.png; sourceTree = "<group>"; };
 		E53663B41B72838A005A1E92 /* Crowded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crowded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53663B81B72838A005A1E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53663B91B72838A005A1E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,7 +183,7 @@
 		E54CE8BA1B75271500B92EDF /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		E54CE8BD1B75276200B92EDF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		E54CE8BE1B75276200B92EDF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E54CE8BE1B75276200B92EDF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Crowded/ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		E54CE8C41B75444400B92EDF /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileView.h; sourceTree = "<group>"; };
 		E54CE8C51B75444400B92EDF /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileView.m; sourceTree = "<group>"; };
 		E54CE8C71B75445300B92EDF /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
@@ -359,6 +361,8 @@
 		E53663AB1B728389005A1E92 = {
 			isa = PBXGroup;
 			children = (
+				E51C3CC11B7D08AF007DF1BF /* uber_logo.png */,
+				E54CE8BE1B75276200B92EDF /* HomeViewController.m */,
 				92F5B7A81B79197400B111E8 /* CategoryFiles */,
 				929B97291B77D47D00F43858 /* graphics */,
 				E53663B61B72838A005A1E92 /* Crowded */,
@@ -458,7 +462,6 @@
 				E54CE8BA1B75271500B92EDF /* LeftMenuViewController.h */,
 				E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */,
 				E54CE8BD1B75276200B92EDF /* HomeViewController.h */,
-				E54CE8BE1B75276200B92EDF /* HomeViewController.m */,
 				E5DD7A3A1B73D56800E93C01 /* ViewController.h */,
 				E5DD7A3B1B73D56800E93C01 /* ViewController.m */,
 			);
@@ -609,6 +612,7 @@
 				929B97651B77D47D00F43858 /* bg2_750x1334.png in Resources */,
 				92F4CFE31B7A66A800B85010 /* linkedin.png in Resources */,
 				E53663C81B72838B005A1E92 /* Images.xcassets in Resources */,
+				E51C3CC21B7D08AF007DF1BF /* uber_logo.png in Resources */,
 				929B97721B77D47D00F43858 /* nav.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
