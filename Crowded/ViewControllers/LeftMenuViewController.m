@@ -102,7 +102,8 @@
 	switch (indexPath.row)
 	{
         case 0:{
-			viewController = [mainStoryboard instantiateViewControllerWithIdentifier: @"HomeViewController"];
+            UIStoryboard *tempStoryboard = [UIStoryboard storyboardWithName:@"temp" bundle:nil];
+			viewController = [tempStoryboard instantiateViewControllerWithIdentifier: @"SkillsViewController"];
 			break;
         }
         case 1:{

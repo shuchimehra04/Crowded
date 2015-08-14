@@ -46,9 +46,14 @@
         NSString *menu = note.userInfo[@"menu"];
         NSLog(@"Revealed %@", menu);
     }];
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
-    [[UINavigationBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    if([UIDevice currentDevice].systemVersion.floatValue >= 8.0)
+    {
+        [[UINavigationBar appearance] setTranslucent:NO];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    }
+    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     application.statusBarStyle=UIStatusBarStyleLightContent;

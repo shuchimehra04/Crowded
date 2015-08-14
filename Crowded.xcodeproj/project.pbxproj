@@ -51,6 +51,10 @@
 		929B97801B77D47D00F43858 /* splash_640X960.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97571B77D47D00F43858 /* splash_640X960.png */; };
 		929B97811B77D47D00F43858 /* splash_750.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97581B77D47D00F43858 /* splash_750.png */; };
 		929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */; };
+		92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D8066B1B7E5FDB0075A220 /* LoginViewController.m */; };
+		92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379C1B7E72E400D4B551 /* SkillsViewController.m */; };
+		92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */; };
+		92D937A21B7E7C1B00D4B551 /* SkillTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */; };
 		92F4CFD11B7A60AA00B85010 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFCE1B7A60AA00B85010 /* logo.png */; };
 		92F4CFD21B7A60AA00B85010 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFCF1B7A60AA00B85010 /* logo@2x.png */; };
 		92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFD01B7A60AA00B85010 /* logo@3x.png */; };
@@ -146,6 +150,13 @@
 		929B97581B77D47D00F43858 /* splash_750.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_750.png; sourceTree = "<group>"; };
 		929B97821B77E08B00F43858 /* UIView+BorderColorWithRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BorderColorWithRadius.h"; path = "Crowded/Category/UIView+BorderColorWithRadius.h"; sourceTree = "<group>"; };
 		929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BorderColorWithRadius.m"; path = "Crowded/Category/UIView+BorderColorWithRadius.m"; sourceTree = "<group>"; };
+		92D8066A1B7E5FDB0075A220 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		92D8066B1B7E5FDB0075A220 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		92D9379B1B7E72E400D4B551 /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
+		92D9379C1B7E72E400D4B551 /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
+		92D9379E1B7E7BE300D4B551 /* SkillTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillTableCell.h; path = ../SkillTableCell.h; sourceTree = "<group>"; };
+		92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkillTableCell.m; path = ../SkillTableCell.m; sourceTree = "<group>"; };
+		92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SkillTableCell.xib; path = ../../../SkillTableCell.xib; sourceTree = "<group>"; };
 		92F4CFCE1B7A60AA00B85010 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		92F4CFCF1B7A60AA00B85010 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		92F4CFD01B7A60AA00B85010 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -439,6 +450,9 @@
 		E5A4B7181B7A787C005A58ED /* Custom TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				92D9379E1B7E7BE300D4B551 /* SkillTableCell.h */,
+				92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */,
+				92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */,
 				E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */,
 				E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */,
 				E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */,
@@ -449,6 +463,10 @@
 		E5DD7A311B73D56800E93C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				92D9379B1B7E72E400D4B551 /* SkillsViewController.h */,
+				92D9379C1B7E72E400D4B551 /* SkillsViewController.m */,
+				92D8066A1B7E5FDB0075A220 /* LoginViewController.h */,
+				92D8066B1B7E5FDB0075A220 /* LoginViewController.m */,
 				92F4CFD41B7A641900B85010 /* SplashViewController.h */,
 				92F4CFD51B7A641900B85010 /* SplashViewController.m */,
 				92F5B7A91B791F4200B111E8 /* SettingViewController.h */,
@@ -589,6 +607,7 @@
 				92F4CFE41B7A66A800B85010 /* linkedin@2x.png in Resources */,
 				929B975B1B77D47D00F43858 /* app_icon_57.png in Resources */,
 				929B97741B77D47D00F43858 /* nav_bg.png in Resources */,
+				92D937A21B7E7C1B00D4B551 /* SkillTableCell.xib in Resources */,
 				929B97801B77D47D00F43858 /* splash_640X960.png in Resources */,
 				92F4CFD21B7A60AA00B85010 /* logo@2x.png in Resources */,
 				92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */,
@@ -662,13 +681,16 @@
 			files = (
 				E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */,
 				E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */,
+				92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */,
 				E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */,
 				929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */,
+				92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */,
 				E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */,
 				E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */,
 				929B97281B77D31900F43858 /* AccountViewController.m in Sources */,
 				E53663BA1B72838A005A1E92 /* main.m in Sources */,
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
+				92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */,
 				E54CE8C61B75444400B92EDF /* ProfileView.m in Sources */,
 				92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */,
 				E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */,
@@ -795,6 +817,7 @@
 			baseConfigurationReference = F8D88774DC41EBB2800FE833 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -807,6 +830,7 @@
 			baseConfigurationReference = 4CF58C8F38BA1F6907A20EFE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

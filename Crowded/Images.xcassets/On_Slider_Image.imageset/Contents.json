@@ -3,17 +3,17 @@
     {
       "idiom" : "iphone",
       "scale" : "1x",
-      "filename" : "login_with_email.png"
+      "filename" : "on.png"
     },
     {
       "idiom" : "iphone",
       "scale" : "2x",
-      "filename" : "login_with_email@2x.png"
+      "filename" : "on@2x.png"
     },
     {
       "idiom" : "iphone",
       "scale" : "3x",
-      "filename" : "login_with_email@3x.png"
+      "filename" : "on@3x.png"
     }
   ],
   "info" : {

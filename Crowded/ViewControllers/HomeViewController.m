@@ -24,7 +24,7 @@
 	self.limitPanGestureSwitch.on = ([SlideNavigationController sharedInstance].panGestureSideOffset == 0) ? NO : YES;
 	self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
     [self setUpSegmentControl];
-  [self setUpProfileView];
+    [self setUpProfileView];
     viewBounds=self.listTableView.bounds;
     
     [self.profileView addSubview:self.profileBundleView];
