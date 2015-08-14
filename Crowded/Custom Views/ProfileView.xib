@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6249" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
+
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+=======
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+>>>>>>> 87dc975e0f54d224e62c8472238413713e477347
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView">
+
             <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+
+            <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Profile is 80% Complete" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4z-ff-3v9">
-                    <rect key="frame" x="8" y="8" width="297" height="25"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="profile_view_bg_image" translatesAutoresizingMaskIntoConstraints="NO" id="G2E-dL-l9y">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile is 80% Complete" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFB-a4-eix">
+                    <rect key="frame" x="12" y="5" width="297" height="25"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -23,16 +34,57 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="com_screen" translatesAutoresizingMaskIntoConstraints="NO" id="gTI-G0-1wy">
                     <rect key="frame" x="239" y="10" width="66" height="53"/>
                 </imageView>
+
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oBz-Bv-QSo">
+                    <rect key="frame" x="11" y="25" width="267" height="31"/>
+                </slider>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="com_screen" translatesAutoresizingMaskIntoConstraints="NO" id="f3c-Jh-mXT">
+                    <rect key="frame" x="344" y="12" width="66" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="GDJ-qO-PEO"/>
+                        <constraint firstAttribute="height" constant="53" id="glW-kI-LJb"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25,345 Jobs available for You!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyd-sX-Z6q">
+                    <rect key="frame" x="14" y="56" width="297" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yyd-sX-Z6q" firstAttribute="top" secondItem="oBz-Bv-QSo" secondAttribute="bottom" constant="1" id="1tQ-4C-s3h"/>
+                <constraint firstItem="G2E-dL-l9y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4hh-9F-QEq"/>
+                <constraint firstAttribute="bottom" secondItem="yyd-sX-Z6q" secondAttribute="bottom" constant="1" id="8NJ-j3-Nmj"/>
+                <constraint firstItem="oFB-a4-eix" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="8zn-ON-GxL"/>
+                <constraint firstItem="yyd-sX-Z6q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="CYX-ll-HMs"/>
+                <constraint firstItem="yyd-sX-Z6q" firstAttribute="top" secondItem="oFB-a4-eix" secondAttribute="bottom" constant="26" id="G2P-hy-rLY"/>
+                <constraint firstAttribute="trailing" secondItem="G2E-dL-l9y" secondAttribute="trailing" id="S6P-FJ-g9S"/>
+                <constraint firstItem="f3c-Jh-mXT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="SDc-9p-NP4"/>
+                <constraint firstItem="f3c-Jh-mXT" firstAttribute="leading" secondItem="yyd-sX-Z6q" secondAttribute="trailing" constant="33" id="SOC-KZ-AM7"/>
+                <constraint firstItem="f3c-Jh-mXT" firstAttribute="leading" secondItem="oFB-a4-eix" secondAttribute="trailing" constant="35" id="bAr-Xc-seO"/>
+                <constraint firstItem="yyd-sX-Z6q" firstAttribute="top" secondItem="oBz-Bv-QSo" secondAttribute="bottom" constant="1" id="gEW-iW-4BK"/>
+                <constraint firstItem="f3c-Jh-mXT" firstAttribute="leading" secondItem="oBz-Bv-QSo" secondAttribute="trailing" constant="68" id="khX-wz-eSN"/>
+                <constraint firstItem="oBz-Bv-QSo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="oUf-hJ-9zd"/>
+                <constraint firstAttribute="bottom" secondItem="f3c-Jh-mXT" secondAttribute="bottom" constant="9" id="qRW-Jb-ZDG"/>
+                <constraint firstItem="oFB-a4-eix" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="qzn-PR-Wrr"/>
+                <constraint firstItem="oBz-Bv-QSo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="vtd-Zz-gHr"/>
+                <constraint firstAttribute="trailing" secondItem="f3c-Jh-mXT" secondAttribute="trailing" constant="4" id="xj6-tf-3yl"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+
             <connections>
                 <outlet property="profileSlider" destination="WQu-Jk-OAE" id="OPR-x8-1RJ"/>
             </connections>
             <point key="canvasLocation" x="308" y="118"/>
+            <point key="canvasLocation" x="181" y="140"/>
+
         </view>
     </objects>
     <resources>
         <image name="com_screen" width="66" height="53"/>
+        <image name="profile_view_bg_image" width="320" height="81"/>
     </resources>
 </document>

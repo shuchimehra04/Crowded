@@ -23,13 +23,16 @@
 	self.shadowSwitch.on = [SlideNavigationController sharedInstance].enableShadow;
 	self.limitPanGestureSwitch.on = ([SlideNavigationController sharedInstance].panGestureSideOffset == 0) ? NO : YES;
 	self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
+    viewBounds=self.listTableView.frame;
+    viewBounds.size.width=self.view.bounds.size.width;
+
     [self setUpSegmentControl];
+
     [self setUpProfileView];
     viewBounds=self.listTableView.bounds;
-    
-    [self.profileView addSubview:self.profileBundleView];
-    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
-    
+
+   [self setUpProfileView];
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -41,9 +44,10 @@
 -(void)setUpProfileView
 {
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProfileView" owner:self options:nil];
-    UIView *profileNew = [nibObjects objectAtIndex:0];
-    self.profileBundleView = profileNew;
-    [self.view addSubview:profileNew];
+    ProfileView *profileNew = [nibObjects objectAtIndex:0];
+    [self.profileBundleView addSubview: profileNew];
+    
+    
 
 }
 # pragma mark -- Segment Control Methods
@@ -69,14 +73,13 @@
     self.navigationItem.titleView = statFilter;
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil];
     MapView *mapView = [nibObjects objectAtIndex:0];
+        [self.mapView addSubview: mapView];
     
-    [mapView setFrame:viewBounds];
-    self.mapView=mapView;
+    [self.mapView setHidden:NO];
+    [self.listTableView setHidden:YES];
+    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
+    
 
-    [self.view addSubview:self.mapView];
-    [self.listTableView removeFromSuperview];
-    
-    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
     
 }
 -(void)segmentControlAction:(UISegmentedControl *)sender
@@ -96,22 +99,17 @@
     if(sender.selectedSegmentIndex==0)
     {
 
-        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil];
-        MapView *mapView = [nibObjects objectAtIndex:0];
-        [mapView setFrame:viewBounds];
-        self.mapView=mapView;
-        [self.view addSubview:self.mapView];
+       
+        [self.mapView setHidden:NO];
+        [self.listTableView setHidden:YES];
+        
+       
         
     }
     else
     {
-        [self.mapView removeFromSuperview];
-        self.mapView=nil;
-        self.listTableView=[[UITableView alloc] init];
-        [self.listTableView setDelegate:self];
-        [self.listTableView setDataSource:self];
-        [self.listTableView setFrame:viewBounds];
-        [self.view addSubview:self.listTableView];
+        [self.mapView setHidden:YES];
+        [self.listTableView setHidden:NO];
         
     }
     
@@ -216,16 +214,29 @@
     return 4;
     
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 85.0f;
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomListingTableViewCell *cell=[self.listTableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
     
+    CustomListingTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
     
-    
+    //cell.contentMode=UIViewContentModeRedraw;
+   // cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+
 //    static NSString *cellIdentifier=@"Cell";
 //    UITableViewCell *tableCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     //tableCell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *controller=[self.storyboard instantiateViewControllerWithIdentifier:@"kPlatformListingsDetailsViewControllerStoryboardID"];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 @end

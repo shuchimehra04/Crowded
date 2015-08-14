@@ -17,7 +17,6 @@
     
 }
 @property (strong, nonatomic) IBOutlet UITableView *listTableView;
-@property (weak, nonatomic) IBOutlet UIView *profileView;
 
 @property (weak, nonatomic) IBOutlet UIView *bannerView;
 @property (nonatomic, strong) IBOutlet UISwitch *limitPanGestureSwitch;
@@ -27,8 +26,8 @@
 @property (nonatomic, strong) IBOutlet UISegmentedControl *portraitSlideOffsetSegment;
 @property (nonatomic, strong) IBOutlet UISegmentedControl *landscapeSlideOffsetSegment;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
-@property(nonatomic,strong)ProfileView *profileBundleView;
-@property(nonatomic,strong)MapView *mapView;
+@property(nonatomic,strong)IBOutlet ProfileView *profileBundleView;
+@property(nonatomic,strong) IBOutlet MapView *mapView;
 
 
 - (IBAction)bounceMenu:(id)sender;
