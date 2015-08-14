@@ -23,17 +23,13 @@
 	self.shadowSwitch.on = [SlideNavigationController sharedInstance].enableShadow;
 	self.limitPanGestureSwitch.on = ([SlideNavigationController sharedInstance].panGestureSideOffset == 0) ? NO : YES;
 	self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
+    viewBounds=self.listTableView.frame;
+    viewBounds.size.width=self.view.bounds.size.width;
+
     [self setUpSegmentControl];
-  [self setUpProfileView];
-    //viewBounds=self.listTableView.bounds;
+   [self setUpProfileView];
     
-    //viewBounds.size.width=self.view.bounds.size.width;
-    
-    
-    //viewBounds.size.width=self.listTableView.bounds.size.width;
-    
-    
-    [self.profileView addSubview:self.profileBundleView];
+   
     
 
 }
@@ -47,19 +43,10 @@
 -(void)setUpProfileView
 {
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProfileView" owner:self options:nil];
-    UIView *profileNew = [nibObjects objectAtIndex:0];
-    self.profileBundleView = profileNew;
+    ProfileView *profileNew = [nibObjects objectAtIndex:0];
+    [self.profileBundleView addSubview: profileNew];
     
-   CGRect Bounds=profileNew.frame;
     
-    Bounds.size.width=self.view.frame.size.width;
-    
-   // Bounds.origin=self.profileView.frame.origin;
-   // [self.profileView setFrame:CGRectMake(self.profileView.frame.origin.x, self.profileView.frame.origin.y, Bounds.size.width, 74)];
-    
-    profileNew.frame=Bounds;
-    
-    [self.profileView addSubview:profileNew];
 
 }
 # pragma mark -- Segment Control Methods
@@ -85,12 +72,11 @@
     self.navigationItem.titleView = statFilter;
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil];
     MapView *mapView = [nibObjects objectAtIndex:0];
+        [self.mapView addSubview: mapView];
     
-    [mapView setFrame:viewBounds];
-    self.mapView=mapView;
-
-    [self.view addSubview:self.mapView];
-    [self.listTableView removeFromSuperview];
+    [self.mapView setHidden:NO];
+    [self.listTableView setHidden:YES];
+    [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
     
 
     
@@ -112,26 +98,17 @@
     if(sender.selectedSegmentIndex==0)
     {
 
-        NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil];
-        MapView *mapView = [nibObjects objectAtIndex:0];
-        [mapView setFrame:viewBounds];
-        self.mapView=mapView;
-        self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-        [self.view addSubview:self.mapView];
+       
+        [self.mapView setHidden:NO];
+        [self.listTableView setHidden:YES];
+        
+       
         
     }
     else
     {
-        [self.mapView removeFromSuperview];
-        self.mapView=nil;
-        self.listTableView=[[UITableView alloc] init];
-        [self.listTableView setDelegate:self];
-        [self.listTableView setDataSource:self];
-        [self.listTableView setFrame:viewBounds];
-        self.listTableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-
-        [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
-        [self.view addSubview:self.listTableView];
+        [self.mapView setHidden:YES];
+        [self.listTableView setHidden:NO];
         
     }
     
@@ -253,5 +230,12 @@
     //tableCell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *controller=[self.storyboard instantiateViewControllerWithIdentifier:@"kPlatformListingsDetailsViewControllerStoryboardID"];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 @end
