@@ -17,9 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
-                                                             bundle: nil];
-    
+  
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
     
     [SlideNavigationController sharedInstance].leftMenu = leftMenu;
@@ -59,7 +58,6 @@
     application.statusBarStyle=UIStatusBarStyleLightContent;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
 
-    
     self.window.tintColor = [UIColor whiteColor];
     // Override point for customization after application launch.
     return YES;

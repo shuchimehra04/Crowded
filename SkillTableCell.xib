@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-Cg-FZ3">
+                <imageView userInteractionEnabled="NO" alpha="0.44999999999999962" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-Cg-FZ3">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEg-r8-EDZ">
@@ -110,6 +110,7 @@
     </objects>
     <resources>
         <image name="cancel_skill" width="49" height="72"/>
+        <image name="health.jpg" width="320" height="72"/>
         <image name="select_skill" width="49" height="72"/>
     </resources>
 </document>

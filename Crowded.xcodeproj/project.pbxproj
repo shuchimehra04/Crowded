@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73F5538E51A27E5248DBDDEF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 197CD5E06590FD990F88FBF4 /* libPods.a */; };
+		9236C71D1B7F9EBD00A1D3C1 /* health.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9236C71C1B7F9EBD00A1D3C1 /* health.jpg */; };
 		929B97281B77D31900F43858 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B97271B77D31900F43858 /* AccountViewController.m */; };
 		929B97591B77D47D00F43858 /* app_icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B972B1B77D47D00F43858 /* app_icon_120.png */; };
 		929B975A1B77D47D00F43858 /* app_icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B972C1B77D47D00F43858 /* app_icon_180.png */; };
@@ -51,6 +52,7 @@
 		929B97801B77D47D00F43858 /* splash_640X960.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97571B77D47D00F43858 /* splash_640X960.png */; };
 		929B97811B77D47D00F43858 /* splash_750.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97581B77D47D00F43858 /* splash_750.png */; };
 		929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */; };
+		92A9B95D1B7F19E1000B3963 /* EditSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */; };
 		92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D8066B1B7E5FDB0075A220 /* LoginViewController.m */; };
 		92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379C1B7E72E400D4B551 /* SkillsViewController.m */; };
 		92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */; };
@@ -107,6 +109,7 @@
 /* Begin PBXFileReference section */
 		197CD5E06590FD990F88FBF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF58C8F38BA1F6907A20EFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9236C71C1B7F9EBD00A1D3C1 /* health.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = health.jpg; sourceTree = "<group>"; };
 		929B97261B77D31900F43858 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		929B97271B77D31900F43858 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		929B972B1B77D47D00F43858 /* app_icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_120.png; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 		929B97581B77D47D00F43858 /* splash_750.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_750.png; sourceTree = "<group>"; };
 		929B97821B77E08B00F43858 /* UIView+BorderColorWithRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BorderColorWithRadius.h"; path = "Crowded/Category/UIView+BorderColorWithRadius.h"; sourceTree = "<group>"; };
 		929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BorderColorWithRadius.m"; path = "Crowded/Category/UIView+BorderColorWithRadius.m"; sourceTree = "<group>"; };
+		92A9B95B1B7F19E1000B3963 /* EditSkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSkillViewController.h; sourceTree = "<group>"; };
+		92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSkillViewController.m; sourceTree = "<group>"; };
 		92D8066A1B7E5FDB0075A220 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		92D8066B1B7E5FDB0075A220 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		92D9379B1B7E72E400D4B551 /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
@@ -313,6 +318,7 @@
 				92F4CFDD1B7A66A800B85010 /* login_with_email.png */,
 				92F4CFDE1B7A66A800B85010 /* login_with_email@2x.png */,
 				92F4CFDF1B7A66A800B85010 /* login_with_email@3x.png */,
+				9236C71C1B7F9EBD00A1D3C1 /* health.jpg */,
 				92F4CFCE1B7A60AA00B85010 /* logo.png */,
 				92F4CFCF1B7A60AA00B85010 /* logo@2x.png */,
 				92F4CFD01B7A60AA00B85010 /* logo@3x.png */,
@@ -469,6 +475,8 @@
 		E5DD7A311B73D56800E93C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				92A9B95B1B7F19E1000B3963 /* EditSkillViewController.h */,
+				92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */,
 				92D9379B1B7E72E400D4B551 /* SkillsViewController.h */,
 				92D9379C1B7E72E400D4B551 /* SkillsViewController.m */,
 				92D8066A1B7E5FDB0075A220 /* LoginViewController.h */,
@@ -612,6 +620,7 @@
 				92F4CFE21B7A66A800B85010 /* fb@3x.png in Resources */,
 				92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */,
 				929B975C1B77D47D00F43858 /* app_icon_80.png in Resources */,
+				9236C71D1B7F9EBD00A1D3C1 /* health.jpg in Resources */,
 				92F4CFE41B7A66A800B85010 /* linkedin@2x.png in Resources */,
 				929B975B1B77D47D00F43858 /* app_icon_57.png in Resources */,
 				929B97741B77D47D00F43858 /* nav_bg.png in Resources */,
@@ -698,6 +707,7 @@
 				E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */,
 				E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */,
 				929B97281B77D31900F43858 /* AccountViewController.m in Sources */,
+				92A9B95D1B7F19E1000B3963 /* EditSkillViewController.m in Sources */,
 				E53663BA1B72838A005A1E92 /* main.m in Sources */,
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
 				92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */,

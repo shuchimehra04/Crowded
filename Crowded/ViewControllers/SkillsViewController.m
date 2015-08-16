@@ -17,7 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.skillsArray = [[NSMutableArray alloc] initWithObjects:@"COOKING",@"DOG SITTING",@"DRIVING",@"C++",@"SERVING",@"VOLUNTEERING", nil];
+    self.skillsArray = [[NSMutableArray alloc] initWithObjects:@"COOKING",@"DOG SITTING",@"DRIVING",@"C++",@"SERVING",@"VOLUNTEERING",@"PROGRAMMING",@"IPHONE", nil];
+    
+    UIImage *image = [UIImage imageNamed:@"nav_bg.png"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
+    imageView.frame = CGRectMake(0, 0, 320, 44);
+    [self.navigationController.navigationBar addSubview:imageView];
+    
+    
+    [self setTitle:@"Skills"];
+    
+    
+    UIButton *editSkillButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [editSkillButton setImage:[UIImage imageNamed:@"edit_skill"] forState:UIControlStateNormal];
+    [editSkillButton addTarget:self action:@selector(editSkillButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:editSkillButton];
+    [self.navigationItem setRightBarButtonItem:rightBarButtonItem];
+    
+}
+
+-(void)editSkillButtonTapped:(UIButton *)sender
+{
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
