@@ -34,4 +34,10 @@
 }
 */
 
+- (IBAction)actionVisit:(id)sender {
+    
+    UIViewController *controller=[self.storyboard instantiateViewControllerWithIdentifier:@"kEditSkillsViewControllerStoryboardID"];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
 @end

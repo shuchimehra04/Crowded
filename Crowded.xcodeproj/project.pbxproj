@@ -83,8 +83,17 @@
 		E56F3D381B76557000A49226 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56F3D371B76557000A49226 /* MapView.xib */; };
 		E56F3D3B1B76558500A49226 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56F3D3A1B76558500A49226 /* MapView.m */; };
 		E56F3D3D1B76567900A49226 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56F3D3C1B76567900A49226 /* MapKit.framework */; };
+		E5834DFF1B7F20AF007C8889 /* EditSkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834DFE1B7F20AF007C8889 /* EditSkillsViewController.m */; };
+		E5834E041B7F2FC9007C8889 /* EditSkillCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E021B7F2FC9007C8889 /* EditSkillCollectionViewCell.m */; };
+		E5834E051B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5834E031B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib */; };
+		E5834E091B7F3A7E007C8889 /* AutoCompletionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E071B7F3A7D007C8889 /* AutoCompletionTableViewController.m */; };
+		E5834E0A1B7F3A7E007C8889 /* AutoCompletionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5834E081B7F3A7E007C8889 /* AutoCompletionTableViewController.xib */; };
+		E5834E111B7F415C007C8889 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E0E1B7F415C007C8889 /* WYPopoverController.m */; };
+		E5834E121B7F415C007C8889 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E101B7F415C007C8889 /* WYStoryboardPopoverSegue.m */; };
 		E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */; };
 		E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */; };
+		E5AA21AE1B7F69E100BE279C /* healthfitnessrevolution-com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */; };
+		E5AA21B01B7F6A4600BE279C /* uber-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AA21AF1B7F6A4600BE279C /* uber-logo.jpg */; };
 		E5AA4EE51B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AA4EE41B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m */; };
 		E5DD7A301B73CFA100E93C01 /* temp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5DD7A2F1B73CFA100E93C01 /* temp.storyboard */; };
 		E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DD7A3B1B73D56800E93C01 /* ViewController.m */; };
@@ -192,9 +201,23 @@
 		E56F3D391B76558500A49226 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		E56F3D3A1B76558500A49226 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		E56F3D3C1B76567900A49226 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E5834DFD1B7F20AF007C8889 /* EditSkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSkillsViewController.h; sourceTree = "<group>"; };
+		E5834DFE1B7F20AF007C8889 /* EditSkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSkillsViewController.m; sourceTree = "<group>"; };
+		E5834E011B7F2FC8007C8889 /* EditSkillCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSkillCollectionViewCell.h; sourceTree = "<group>"; };
+		E5834E021B7F2FC9007C8889 /* EditSkillCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSkillCollectionViewCell.m; sourceTree = "<group>"; };
+		E5834E031B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditSkillCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5834E061B7F3A7D007C8889 /* AutoCompletionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCompletionTableViewController.h; sourceTree = "<group>"; };
+		E5834E071B7F3A7D007C8889 /* AutoCompletionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCompletionTableViewController.m; sourceTree = "<group>"; };
+		E5834E081B7F3A7E007C8889 /* AutoCompletionTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCompletionTableViewController.xib; sourceTree = "<group>"; };
+		E5834E0D1B7F415C007C8889 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		E5834E0E1B7F415C007C8889 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		E5834E0F1B7F415C007C8889 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		E5834E101B7F415C007C8889 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomListingTableViewCell.h; sourceTree = "<group>"; };
 		E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomListingTableViewCell.m; sourceTree = "<group>"; };
 		E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomListingTableViewCell.xib; sourceTree = "<group>"; };
+		E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "healthfitnessrevolution-com.jpg"; sourceTree = "<group>"; };
+		E5AA21AF1B7F6A4600BE279C /* uber-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "uber-logo.jpg"; sourceTree = "<group>"; };
 		E5AA4EE31B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformListingsDetailsViewController.h; sourceTree = "<group>"; };
 		E5AA4EE41B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformListingsDetailsViewController.m; sourceTree = "<group>"; };
 		E5DD7A2F1B73CFA100E93C01 /* temp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = temp.storyboard; sourceTree = "<group>"; };
@@ -364,9 +387,12 @@
 		E53663AB1B728389005A1E92 = {
 			isa = PBXGroup;
 			children = (
+				E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */,
+				E5AA21AF1B7F6A4600BE279C /* uber-logo.jpg */,
 				E51C3CC11B7D08AF007DF1BF /* uber_logo.png */,
 				92F5B7A81B79197400B111E8 /* CategoryFiles */,
 				929B97291B77D47D00F43858 /* graphics */,
+				E5834E0B1B7F4146007C8889 /* ThirdParties */,
 				E53663B61B72838A005A1E92 /* Crowded */,
 				E53663D31B72838B005A1E92 /* CrowdedTests */,
 				E53663B51B72838A005A1E92 /* Products */,
@@ -431,6 +457,7 @@
 		E54CE8C31B75442700B92EDF /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				E5834E001B7F2FA9007C8889 /* Custom CollectionView Cell */,
 				E5A4B7181B7A787C005A58ED /* Custom TableViewCell */,
 				E54CE8C41B75444400B92EDF /* ProfileView.h */,
 				E54CE8C51B75444400B92EDF /* ProfileView.m */,
@@ -440,6 +467,35 @@
 				E56F3D3A1B76558500A49226 /* MapView.m */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E5834E001B7F2FA9007C8889 /* Custom CollectionView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E5834E011B7F2FC8007C8889 /* EditSkillCollectionViewCell.h */,
+				E5834E021B7F2FC9007C8889 /* EditSkillCollectionViewCell.m */,
+				E5834E031B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib */,
+			);
+			path = "Custom CollectionView Cell";
+			sourceTree = "<group>";
+		};
+		E5834E0B1B7F4146007C8889 /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+				E5834E0C1B7F415C007C8889 /* WYPopoverController */,
+			);
+			path = ThirdParties;
+			sourceTree = "<group>";
+		};
+		E5834E0C1B7F415C007C8889 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				E5834E0D1B7F415C007C8889 /* WYPopoverController.h */,
+				E5834E0E1B7F415C007C8889 /* WYPopoverController.m */,
+				E5834E0F1B7F415C007C8889 /* WYStoryboardPopoverSegue.h */,
+				E5834E101B7F415C007C8889 /* WYStoryboardPopoverSegue.m */,
+			);
+			path = WYPopoverController;
 			sourceTree = "<group>";
 		};
 		E5A4B7181B7A787C005A58ED /* Custom TableViewCell */ = {
@@ -469,6 +525,11 @@
 				E54CE8BE1B75276200B92EDF /* HomeViewController.m */,
 				E5DD7A3A1B73D56800E93C01 /* ViewController.h */,
 				E5DD7A3B1B73D56800E93C01 /* ViewController.m */,
+				E5834DFD1B7F20AF007C8889 /* EditSkillsViewController.h */,
+				E5834DFE1B7F20AF007C8889 /* EditSkillsViewController.m */,
+				E5834E061B7F3A7D007C8889 /* AutoCompletionTableViewController.h */,
+				E5834E071B7F3A7D007C8889 /* AutoCompletionTableViewController.m */,
+				E5834E081B7F3A7E007C8889 /* AutoCompletionTableViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -585,13 +646,16 @@
 				929B976A1B77D47D00F43858 /* cancel_skill.png in Resources */,
 				929B975A1B77D47D00F43858 /* app_icon_180.png in Resources */,
 				E53663CB1B72838B005A1E92 /* LaunchScreen.xib in Resources */,
+				E5834E051B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib in Resources */,
 				E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */,
 				929B97621B77D47D00F43858 /* bg2_1242x2016.png in Resources */,
 				929B97791B77D47D00F43858 /* select_skill_cross@2x.png in Resources */,
 				929B976E1B77D47D00F43858 /* computer.png in Resources */,
+				E5AA21AE1B7F69E100BE279C /* healthfitnessrevolution-com.jpg in Resources */,
 				929B97611B77D47D00F43858 /* bg_750x1142.png in Resources */,
 				929B977C1B77D47D00F43858 /* sidebar_bluebg.png in Resources */,
 				92F4CFE21B7A66A800B85010 /* fb@3x.png in Resources */,
+				E5834E0A1B7F3A7E007C8889 /* AutoCompletionTableViewController.xib in Resources */,
 				92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */,
 				929B975C1B77D47D00F43858 /* app_icon_80.png in Resources */,
 				92F4CFE41B7A66A800B85010 /* linkedin@2x.png in Resources */,
@@ -604,6 +668,7 @@
 				929B97601B77D47D00F43858 /* bg_640x832.png in Resources */,
 				929B97641B77D47D00F43858 /* bg2_640x960.png in Resources */,
 				929B975F1B77D47D00F43858 /* bg_640x1008.png in Resources */,
+				E5AA21B01B7F6A4600BE279C /* uber-logo.jpg in Resources */,
 				E56F3D381B76557000A49226 /* MapView.xib in Resources */,
 				929B97661B77D47D00F43858 /* back.png in Resources */,
 				929B977D1B77D47D00F43858 /* sidebar_bluebg@2x.png in Resources */,
@@ -670,15 +735,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */,
+				E5834E121B7F415C007C8889 /* WYStoryboardPopoverSegue.m in Sources */,
 				E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */,
 				E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */,
+				E5834E091B7F3A7E007C8889 /* AutoCompletionTableViewController.m in Sources */,
 				E5AA4EE51B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m in Sources */,
+				E5834E041B7F2FC9007C8889 /* EditSkillCollectionViewCell.m in Sources */,
 				929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */,
 				E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */,
 				E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */,
+				E5834E111B7F415C007C8889 /* WYPopoverController.m in Sources */,
 				929B97281B77D31900F43858 /* AccountViewController.m in Sources */,
 				E53663BA1B72838A005A1E92 /* main.m in Sources */,
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
+				E5834DFF1B7F20AF007C8889 /* EditSkillsViewController.m in Sources */,
 				E54CE8C61B75444400B92EDF /* ProfileView.m in Sources */,
 				92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */,
 				E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */,

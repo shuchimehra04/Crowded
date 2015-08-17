@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PlatformListingsDetailsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *ActionVisitPlatform;
+- (IBAction)actionVisit:(id)sender;
 
 @end

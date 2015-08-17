@@ -210,7 +210,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 9;
     
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -221,7 +221,7 @@
 {
     
     CustomListingTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //cell.contentMode=UIViewContentModeRedraw;
    // cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 
@@ -233,6 +233,8 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     UIViewController *controller=[self.storyboard instantiateViewControllerWithIdentifier:@"kPlatformListingsDetailsViewControllerStoryboardID"];
     
     [self.navigationController pushViewController:controller animated:YES];

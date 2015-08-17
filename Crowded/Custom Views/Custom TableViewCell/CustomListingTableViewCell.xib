@@ -36,8 +36,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uber_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="XMu-Lo-tnM">
-                                <rect key="frame" x="13" y="17" width="60" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uber-logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XMu-Lo-tnM">
+                                <rect key="frame" x="13" y="10" width="60" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="7Jt-e2-yBd"/>
                                     <constraint firstAttribute="width" constant="60" id="lDu-Ll-lQr"/>
@@ -86,6 +86,6 @@
     </objects>
     <resources>
         <image name="cell_background_image" width="320" height="40"/>
-        <image name="uber_logo.png" width="80" height="80"/>
+        <image name="uber-logo.jpg" width="1000" height="1000"/>
     </resources>
 </document>
