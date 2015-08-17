@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "select_skill_tick.png"
+      "filename" : "bg_640x832.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "select_skill_tick@2x.png"
+      "filename" : "bg_750x1142.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "select_skill_tick@3x.png"
+      "filename" : "bg_1242x2016.png"
     }
   ],
   "info" : {

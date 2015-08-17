@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73F5538E51A27E5248DBDDEF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 197CD5E06590FD990F88FBF4 /* libPods.a */; };
+		9236C71D1B7F9EBD00A1D3C1 /* health.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9236C71C1B7F9EBD00A1D3C1 /* health.jpg */; };
 		929B97281B77D31900F43858 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B97271B77D31900F43858 /* AccountViewController.m */; };
 		929B97591B77D47D00F43858 /* app_icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B972B1B77D47D00F43858 /* app_icon_120.png */; };
 		929B975A1B77D47D00F43858 /* app_icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B972C1B77D47D00F43858 /* app_icon_180.png */; };
@@ -51,6 +52,11 @@
 		929B97801B77D47D00F43858 /* splash_640X960.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97571B77D47D00F43858 /* splash_640X960.png */; };
 		929B97811B77D47D00F43858 /* splash_750.png in Resources */ = {isa = PBXBuildFile; fileRef = 929B97581B77D47D00F43858 /* splash_750.png */; };
 		929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */; };
+		92A9B95D1B7F19E1000B3963 /* EditSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */; };
+		92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D8066B1B7E5FDB0075A220 /* LoginViewController.m */; };
+		92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379C1B7E72E400D4B551 /* SkillsViewController.m */; };
+		92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */; };
+		92D937A21B7E7C1B00D4B551 /* SkillTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */; };
 		92F4CFD11B7A60AA00B85010 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFCE1B7A60AA00B85010 /* logo.png */; };
 		92F4CFD21B7A60AA00B85010 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFCF1B7A60AA00B85010 /* logo@2x.png */; };
 		92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFD01B7A60AA00B85010 /* logo@3x.png */; };
@@ -68,7 +74,6 @@
 		92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEA1B7A725100B85010 /* create_account@2x.png */; };
 		92F4CFEE1B7A725100B85010 /* create_account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEB1B7A725100B85010 /* create_account@3x.png */; };
 		92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F5B7AA1B791F4200B111E8 /* SettingViewController.m */; };
-		E51C3CC21B7D08AF007DF1BF /* uber_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E51C3CC11B7D08AF007DF1BF /* uber_logo.png */; };
 		E53663BA1B72838A005A1E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663B91B72838A005A1E92 /* main.m */; };
 		E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663BC1B72838A005A1E92 /* AppDelegate.m */; };
 		E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53663BE1B72838A005A1E92 /* Crowded.xcdatamodeld */; };
@@ -112,6 +117,7 @@
 /* Begin PBXFileReference section */
 		197CD5E06590FD990F88FBF4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF58C8F38BA1F6907A20EFE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9236C71C1B7F9EBD00A1D3C1 /* health.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = health.jpg; sourceTree = "<group>"; };
 		929B97261B77D31900F43858 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		929B97271B77D31900F43858 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		929B972B1B77D47D00F43858 /* app_icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_120.png; sourceTree = "<group>"; };
@@ -157,6 +163,15 @@
 		929B97581B77D47D00F43858 /* splash_750.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_750.png; sourceTree = "<group>"; };
 		929B97821B77E08B00F43858 /* UIView+BorderColorWithRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+BorderColorWithRadius.h"; path = "Crowded/Category/UIView+BorderColorWithRadius.h"; sourceTree = "<group>"; };
 		929B97831B77E08B00F43858 /* UIView+BorderColorWithRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+BorderColorWithRadius.m"; path = "Crowded/Category/UIView+BorderColorWithRadius.m"; sourceTree = "<group>"; };
+		92A9B95B1B7F19E1000B3963 /* EditSkillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSkillViewController.h; sourceTree = "<group>"; };
+		92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSkillViewController.m; sourceTree = "<group>"; };
+		92D8066A1B7E5FDB0075A220 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		92D8066B1B7E5FDB0075A220 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		92D9379B1B7E72E400D4B551 /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
+		92D9379C1B7E72E400D4B551 /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
+		92D9379E1B7E7BE300D4B551 /* SkillTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillTableCell.h; path = ../SkillTableCell.h; sourceTree = "<group>"; };
+		92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkillTableCell.m; path = ../SkillTableCell.m; sourceTree = "<group>"; };
+		92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SkillTableCell.xib; path = ../../../SkillTableCell.xib; sourceTree = "<group>"; };
 		92F4CFCE1B7A60AA00B85010 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		92F4CFCF1B7A60AA00B85010 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
 		92F4CFD01B7A60AA00B85010 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
@@ -177,7 +192,6 @@
 		92F5B7A71B79195F00B111E8 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		92F5B7A91B791F4200B111E8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		92F5B7AA1B791F4200B111E8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
-		E51C3CC11B7D08AF007DF1BF /* uber_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uber_logo.png; sourceTree = "<group>"; };
 		E53663B41B72838A005A1E92 /* Crowded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crowded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53663B81B72838A005A1E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53663B91B72838A005A1E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -324,6 +338,7 @@
 				92F4CFDD1B7A66A800B85010 /* login_with_email.png */,
 				92F4CFDE1B7A66A800B85010 /* login_with_email@2x.png */,
 				92F4CFDF1B7A66A800B85010 /* login_with_email@3x.png */,
+				9236C71C1B7F9EBD00A1D3C1 /* health.jpg */,
 				92F4CFCE1B7A60AA00B85010 /* logo.png */,
 				92F4CFCF1B7A60AA00B85010 /* logo@2x.png */,
 				92F4CFD01B7A60AA00B85010 /* logo@3x.png */,
@@ -389,7 +404,6 @@
 			children = (
 				E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */,
 				E5AA21AF1B7F6A4600BE279C /* uber-logo.jpg */,
-				E51C3CC11B7D08AF007DF1BF /* uber_logo.png */,
 				92F5B7A81B79197400B111E8 /* CategoryFiles */,
 				929B97291B77D47D00F43858 /* graphics */,
 				E5834E0B1B7F4146007C8889 /* ThirdParties */,
@@ -501,6 +515,9 @@
 		E5A4B7181B7A787C005A58ED /* Custom TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				92D9379E1B7E7BE300D4B551 /* SkillTableCell.h */,
+				92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */,
+				92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */,
 				E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */,
 				E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */,
 				E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */,
@@ -511,6 +528,12 @@
 		E5DD7A311B73D56800E93C01 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				92A9B95B1B7F19E1000B3963 /* EditSkillViewController.h */,
+				92A9B95C1B7F19E1000B3963 /* EditSkillViewController.m */,
+				92D9379B1B7E72E400D4B551 /* SkillsViewController.h */,
+				92D9379C1B7E72E400D4B551 /* SkillsViewController.m */,
+				92D8066A1B7E5FDB0075A220 /* LoginViewController.h */,
+				92D8066B1B7E5FDB0075A220 /* LoginViewController.m */,
 				E5AA4EE31B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.h */,
 				E5AA4EE41B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m */,
 				92F4CFD41B7A641900B85010 /* SplashViewController.h */,
@@ -658,9 +681,11 @@
 				E5834E0A1B7F3A7E007C8889 /* AutoCompletionTableViewController.xib in Resources */,
 				92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */,
 				929B975C1B77D47D00F43858 /* app_icon_80.png in Resources */,
+				9236C71D1B7F9EBD00A1D3C1 /* health.jpg in Resources */,
 				92F4CFE41B7A66A800B85010 /* linkedin@2x.png in Resources */,
 				929B975B1B77D47D00F43858 /* app_icon_57.png in Resources */,
 				929B97741B77D47D00F43858 /* nav_bg.png in Resources */,
+				92D937A21B7E7C1B00D4B551 /* SkillTableCell.xib in Resources */,
 				929B97801B77D47D00F43858 /* splash_640X960.png in Resources */,
 				92F4CFD21B7A60AA00B85010 /* logo@2x.png in Resources */,
 				92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */,
@@ -682,7 +707,6 @@
 				929B97651B77D47D00F43858 /* bg2_750x1334.png in Resources */,
 				92F4CFE31B7A66A800B85010 /* linkedin.png in Resources */,
 				E53663C81B72838B005A1E92 /* Images.xcassets in Resources */,
-				E51C3CC21B7D08AF007DF1BF /* uber_logo.png in Resources */,
 				929B97721B77D47D00F43858 /* nav.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,18 +761,22 @@
 				E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */,
 				E5834E121B7F415C007C8889 /* WYStoryboardPopoverSegue.m in Sources */,
 				E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */,
+				92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */,
 				E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */,
 				E5834E091B7F3A7E007C8889 /* AutoCompletionTableViewController.m in Sources */,
 				E5AA4EE51B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m in Sources */,
 				E5834E041B7F2FC9007C8889 /* EditSkillCollectionViewCell.m in Sources */,
 				929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */,
+				92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */,
 				E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */,
 				E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */,
 				E5834E111B7F415C007C8889 /* WYPopoverController.m in Sources */,
 				929B97281B77D31900F43858 /* AccountViewController.m in Sources */,
+				92A9B95D1B7F19E1000B3963 /* EditSkillViewController.m in Sources */,
 				E53663BA1B72838A005A1E92 /* main.m in Sources */,
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
 				E5834DFF1B7F20AF007C8889 /* EditSkillsViewController.m in Sources */,
+				92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */,
 				E54CE8C61B75444400B92EDF /* ProfileView.m in Sources */,
 				92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */,
 				E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */,
@@ -875,6 +903,7 @@
 			baseConfigurationReference = F8D88774DC41EBB2800FE833 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -887,6 +916,7 @@
 			baseConfigurationReference = 4CF58C8F38BA1F6907A20EFE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

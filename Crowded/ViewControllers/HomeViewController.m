@@ -27,10 +27,11 @@
     viewBounds.size.width=self.view.bounds.size.width;
 
     [self setUpSegmentControl];
-   [self setUpProfileView];
-    
-   
-    
+
+    [self setUpProfileView];
+    viewBounds=self.listTableView.bounds;
+
+  // [self setUpProfileView];
 
 }
 
@@ -45,9 +46,6 @@
     NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"ProfileView" owner:self options:nil];
     ProfileView *profileNew = [nibObjects objectAtIndex:0];
     [self.profileBundleView addSubview: profileNew];
-    
-    
-
 }
 # pragma mark -- Segment Control Methods
 -(void)setUpSegmentControl
@@ -98,12 +96,8 @@
     if(sender.selectedSegmentIndex==0)
     {
 
-       
         [self.mapView setHidden:NO];
         [self.listTableView setHidden:YES];
-        
-       
-        
     }
     else
     {
