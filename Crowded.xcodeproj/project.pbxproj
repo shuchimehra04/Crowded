@@ -83,8 +83,6 @@
 		E53663D71B72838B005A1E92 /* CrowdedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663D61B72838B005A1E92 /* CrowdedTests.m */; };
 		E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */; };
 		E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54CE8BE1B75276200B92EDF /* HomeViewController.m */; };
-		E54CE8C61B75444400B92EDF /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E54CE8C51B75444400B92EDF /* ProfileView.m */; };
-		E54CE8C81B75445300B92EDF /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54CE8C71B75445300B92EDF /* ProfileView.xib */; };
 		E56F3D381B76557000A49226 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56F3D371B76557000A49226 /* MapView.xib */; };
 		E56F3D3B1B76558500A49226 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56F3D3A1B76558500A49226 /* MapView.m */; };
 		E56F3D3D1B76567900A49226 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56F3D3C1B76567900A49226 /* MapKit.framework */; };
@@ -208,9 +206,6 @@
 		E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		E54CE8BD1B75276200B92EDF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E54CE8BE1B75276200B92EDF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		E54CE8C41B75444400B92EDF /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileView.h; sourceTree = "<group>"; };
-		E54CE8C51B75444400B92EDF /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileView.m; sourceTree = "<group>"; };
-		E54CE8C71B75445300B92EDF /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
 		E56F3D371B76557000A49226 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		E56F3D391B76558500A49226 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		E56F3D3A1B76558500A49226 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
@@ -473,9 +468,6 @@
 			children = (
 				E5834E001B7F2FA9007C8889 /* Custom CollectionView Cell */,
 				E5A4B7181B7A787C005A58ED /* Custom TableViewCell */,
-				E54CE8C41B75444400B92EDF /* ProfileView.h */,
-				E54CE8C51B75444400B92EDF /* ProfileView.m */,
-				E54CE8C71B75445300B92EDF /* ProfileView.xib */,
 				E56F3D371B76557000A49226 /* MapView.xib */,
 				E56F3D391B76558500A49226 /* MapView.h */,
 				E56F3D3A1B76558500A49226 /* MapView.m */,
@@ -645,7 +637,6 @@
 				92F4CFE81B7A66A800B85010 /* login_with_email@3x.png in Resources */,
 				92F4CFE51B7A66A800B85010 /* linkedin@3x.png in Resources */,
 				929B976F1B77D47D00F43858 /* computer@2x.png in Resources */,
-				E54CE8C81B75445300B92EDF /* ProfileView.xib in Resources */,
 				92F4CFEE1B7A725100B85010 /* create_account@3x.png in Resources */,
 				92F4CFE61B7A66A800B85010 /* login_with_email.png in Resources */,
 				929B97711B77D47D00F43858 /* edit_skill@2x.png in Resources */,
@@ -777,7 +768,6 @@
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
 				E5834DFF1B7F20AF007C8889 /* EditSkillsViewController.m in Sources */,
 				92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */,
-				E54CE8C61B75444400B92EDF /* ProfileView.m in Sources */,
 				92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */,
 				E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */,
 				92F4CFD61B7A641900B85010 /* SplashViewController.m in Sources */,

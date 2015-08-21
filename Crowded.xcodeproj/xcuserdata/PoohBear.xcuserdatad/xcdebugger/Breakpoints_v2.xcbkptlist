@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Crowded/ViewControllers/HomeViewController.m"
-            timestampString = "461268915.025804"
+            timestampString = "461788597.438021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-setUpProfileView"
-            landmarkType = "5">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "@implementation HomeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

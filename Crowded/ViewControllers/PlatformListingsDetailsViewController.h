@@ -11,5 +11,7 @@
 @interface PlatformListingsDetailsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *ActionVisitPlatform;
 - (IBAction)actionVisit:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+- (IBAction)back_btn:(id)sender;
 
 @end

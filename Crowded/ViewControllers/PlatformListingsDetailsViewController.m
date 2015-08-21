@@ -7,7 +7,7 @@
 //
 
 #import "PlatformListingsDetailsViewController.h"
-
+#import "ViewController.h"
 @interface PlatformListingsDetailsViewController ()
 
 @end
@@ -38,6 +38,11 @@
     
     UIViewController *controller=[self.storyboard instantiateViewControllerWithIdentifier:@"kEditSkillsViewControllerStoryboardID"];
     [self.navigationController pushViewController:controller animated:YES];
+    
+}
+- (IBAction)back_btn:(id)sender {
+    
+   [(ViewController *)self.parentViewController removeChild:self];
     
 }
 @end
