@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "CrowdedApiWrapper.h"
 
 @interface LoginViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.aplhaView.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+    self.submitView.layer.borderColor=[UIColor whiteColor].CGColor;
+    self.submitView.layer.borderWidth=2.0f;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,4 +37,37 @@
 }
 */
 
+- (IBAction)submitAction:(id)sender {
+    
+//    [[CrowdedApiWrapper instance] loginUser:self.usernameTextfield.text andPassword:self.passwordTextfield.text success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        
+//    }];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    
+    UIViewController *viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"SlideNavigationControllerStoryboardID"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
+    //SlideNavigationControllerStoryboardID
+    
+}
+- (IBAction)lostPasswordAction:(id)sender {
+    
+    //LostPasswordViewController
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"temp" bundle: nil];
+    
+    UIViewController *viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"LostPasswordViewControllerStoryboardId"];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
+
+    
+}
+- (IBAction)linkedInAction:(id)sender {
+}
+
+- (IBAction)facebookAction:(id)sender {
+}
 @end

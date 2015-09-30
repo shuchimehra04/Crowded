@@ -19,6 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    
+    UIViewController *viewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"EntryViewControllerStoryBoardID"];
+    // determine the initial view controller here and instantiate it with [storyboard instantiateViewControllerWithIdentifier:<storyboard id>];
+    UINavigationController *nav=[[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window.rootViewController = nav;
+    
     LeftMenuViewController *leftMenu = (LeftMenuViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"LeftMenuViewController"];
     
     [SlideNavigationController sharedInstance].leftMenu = leftMenu;

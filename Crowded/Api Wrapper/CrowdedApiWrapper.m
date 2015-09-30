@@ -8,6 +8,9 @@
 
 #import "CrowdedApiWrapper.h"
 static NSString *const BASE_URL = @"http://apidev.crowded.com/";
+static NSString *const ACCESSTOKEN_HEADER_FIELD = @"access_token";
+static NSString *const TOKENTYPE_HEADER_FIELD = @"token_type";
+static NSString *const AUTHENTICATION_HEADER_FIELD = @"Authorization";
 
 @implementation CrowdedApiWrapper
 + (id)instance {
@@ -27,12 +30,7 @@ static NSString *const BASE_URL = @"http://apidev.crowded.com/";
         [_manager setRequestSerializer:serializer];
         NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0 diskCapacity:50 * 1024 * 1024 diskPath:nil];
         [NSURLCache setSharedURLCache:sharedCache];
-        [self getAccessTokensuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
             
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            
-        }];
-    
     }
     return self;
     
@@ -44,9 +42,9 @@ static NSString *const BASE_URL = @"http://apidev.crowded.com/";
 
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"password", @"grant_type", @"test@test.com", @"username", @"123", @"password", @"CrowdedApp", @"client_id", @"123", @"client_secret", nil];
 
-    [_manager POST:[BASE_URL stringByAppendingString:@"users/register"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [_manager POST:[BASE_URL stringByAppendingString:@"oauth"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    [self storeAccessToken:[responseObject objectForKey:@"access_token"] forTokenType:[responseObject objectForKey:@"token_type"]];
+    [self storeAccessToken:[responseObject objectForKey:ACCESSTOKEN_HEADER_FIELD] forTokenType:[responseObject objectForKey:TOKENTYPE_HEADER_FIELD]];
         
         if (success)
             success(operation,responseObject);
@@ -55,11 +53,80 @@ static NSString *const BASE_URL = @"http://apidev.crowded.com/";
     }];
     
 }
-//token_type
+- (void)registerUser:(NSString *)username success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure
+{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:username,@"email",nil];
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [_manager POST:[BASE_URL stringByAppendingString:@"user"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        if (success)
+            self.emailID=username;
+        
+            success(operation, responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+           // [self registerUser:username success:success failure:failure];
+        
+           }];
+
+
+}
+-(void)loginUser:(NSString *)username andPassword:(NSString *)password success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure
+{
+
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:username,@"email",password,@"password",nil];
+    
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [_manager POST:[BASE_URL stringByAppendingString:@"auth"] parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        if (success)
+            success(operation, responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        // [self registerUser:username success:success failure:failure];
+        
+    }];
+
+
+
+}
+-(void)forgotPassword:(NSString *)username success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure
+{
+    //apidev.crowded.com/user?forgotPass=<email>
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [_manager POST:[[BASE_URL stringByAppendingString:@"user?forgotPass="] stringByAppendingString:[NSString stringWithFormat:@"%@",username]] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        if (success)
+            success(operation, responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        
+    }];
+    
+
+
+}
 - (void)storeAccessToken:(NSString*)access_Token forTokenType:(NSString*)token_Type {
     accessToken=access_Token;
     tokenType=token_Type;
+    [[_manager requestSerializer] setValue:[[[token_Type stringByAppendingString:@"<" ]stringByAppendingString:accessToken] stringByAppendingString:@">"] forHTTPHeaderField:AUTHENTICATION_HEADER_FIELD];
+     }
+- (void)registerUserSecondStep:(NSString *)emailId success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure
+{
     
- }
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [_manager POST:[[BASE_URL stringByAppendingString:@"user/"] stringByAppendingString:[NSString stringWithFormat:@"%@",emailId]] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        if (success)
+            success(operation, responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        // [self registerUser:username success:success failure:failure];
+        
+    }];
+    
 
+}
 @end

@@ -81,8 +81,25 @@
 		E53663C81B72838B005A1E92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53663C71B72838B005A1E92 /* Images.xcassets */; };
 		E53663CB1B72838B005A1E92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E53663C91B72838B005A1E92 /* LaunchScreen.xib */; };
 		E53663D71B72838B005A1E92 /* CrowdedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663D61B72838B005A1E92 /* CrowdedTests.m */; };
+		E5490F5F1BADCD0000A1455A /* Quicksand Bold Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F511BADCCFF00A1455A /* Quicksand Bold Oblique.otf */; };
+		E5490F601BADCD0000A1455A /* Quicksand Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F521BADCCFF00A1455A /* Quicksand Bold.otf */; };
+		E5490F611BADCD0000A1455A /* Quicksand Book Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F531BADCCFF00A1455A /* Quicksand Book Oblique.otf */; };
+		E5490F621BADCD0000A1455A /* Quicksand Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F541BADCCFF00A1455A /* Quicksand Book.otf */; };
+		E5490F631BADCD0000A1455A /* Quicksand Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F551BADCCFF00A1455A /* Quicksand Dash.otf */; };
+		E5490F641BADCD0000A1455A /* Quicksand Light Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F561BADCCFF00A1455A /* Quicksand Light Oblique.otf */; };
+		E5490F651BADCD0000A1455A /* Quicksand Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F571BADCCFF00A1455A /* Quicksand Light.otf */; };
+		E5490F661BADCD0000A1455A /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F581BADCCFF00A1455A /* Quicksand-Bold.otf */; };
+		E5490F671BADCD0000A1455A /* Quicksand-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F591BADCCFF00A1455A /* Quicksand-BoldItalic.otf */; };
+		E5490F681BADCD0000A1455A /* Quicksand-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F5A1BADCCFF00A1455A /* Quicksand-Italic.otf */; };
+		E5490F691BADCD0000A1455A /* Quicksand-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F5B1BADCCFF00A1455A /* Quicksand-Light.otf */; };
+		E5490F6A1BADCD0000A1455A /* Quicksand-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F5C1BADCCFF00A1455A /* Quicksand-LightItalic.otf */; };
+		E5490F6B1BADCD0000A1455A /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F5D1BADCCFF00A1455A /* Quicksand-Regular.otf */; };
+		E5490F6C1BADCD0000A1455A /* Quicksand_Dash.otf in Resources */ = {isa = PBXBuildFile; fileRef = E5490F5E1BADCD0000A1455A /* Quicksand_Dash.otf */; };
+		E5490FA41BADDAA600A1455A /* LostPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5490FA31BADDAA600A1455A /* LostPasswordViewController.m */; };
 		E54CE8BC1B75271500B92EDF /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */; };
 		E54CE8BF1B75276200B92EDF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54CE8BE1B75276200B92EDF /* HomeViewController.m */; };
+		E568B7571BA5E177002641A7 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E568B7561BA5E177002641A7 /* CreateAccountViewController.m */; };
+		E568B75A1BA5EB0A002641A7 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E568B7591BA5EB0A002641A7 /* EntryViewController.m */; };
 		E56F3D381B76557000A49226 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56F3D371B76557000A49226 /* MapView.xib */; };
 		E56F3D3B1B76558500A49226 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56F3D3A1B76558500A49226 /* MapView.m */; };
 		E56F3D3D1B76567900A49226 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56F3D3C1B76567900A49226 /* MapKit.framework */; };
@@ -93,6 +110,7 @@
 		E5834E0A1B7F3A7E007C8889 /* AutoCompletionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5834E081B7F3A7E007C8889 /* AutoCompletionTableViewController.xib */; };
 		E5834E111B7F415C007C8889 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E0E1B7F415C007C8889 /* WYPopoverController.m */; };
 		E5834E121B7F415C007C8889 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E5834E101B7F415C007C8889 /* WYStoryboardPopoverSegue.m */; };
+		E5946F491BBC60A20044043F /* CreateAccountSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5946F481BBC60A20044043F /* CreateAccountSecondStepViewController.m */; };
 		E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */; };
 		E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */; };
 		E5AA21AE1B7F69E100BE279C /* healthfitnessrevolution-com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */; };
@@ -203,10 +221,30 @@
 		E53663D01B72838B005A1E92 /* CrowdedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53663D51B72838B005A1E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53663D61B72838B005A1E92 /* CrowdedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrowdedTests.m; sourceTree = "<group>"; };
+		E5490F511BADCCFF00A1455A /* Quicksand Bold Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Bold Oblique.otf"; sourceTree = "<group>"; };
+		E5490F521BADCCFF00A1455A /* Quicksand Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Bold.otf"; sourceTree = "<group>"; };
+		E5490F531BADCCFF00A1455A /* Quicksand Book Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Book Oblique.otf"; sourceTree = "<group>"; };
+		E5490F541BADCCFF00A1455A /* Quicksand Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Book.otf"; sourceTree = "<group>"; };
+		E5490F551BADCCFF00A1455A /* Quicksand Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Dash.otf"; sourceTree = "<group>"; };
+		E5490F561BADCCFF00A1455A /* Quicksand Light Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Light Oblique.otf"; sourceTree = "<group>"; };
+		E5490F571BADCCFF00A1455A /* Quicksand Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand Light.otf"; sourceTree = "<group>"; };
+		E5490F581BADCCFF00A1455A /* Quicksand-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.otf"; sourceTree = "<group>"; };
+		E5490F591BADCCFF00A1455A /* Quicksand-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-BoldItalic.otf"; sourceTree = "<group>"; };
+		E5490F5A1BADCCFF00A1455A /* Quicksand-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Italic.otf"; sourceTree = "<group>"; };
+		E5490F5B1BADCCFF00A1455A /* Quicksand-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.otf"; sourceTree = "<group>"; };
+		E5490F5C1BADCCFF00A1455A /* Quicksand-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-LightItalic.otf"; sourceTree = "<group>"; };
+		E5490F5D1BADCCFF00A1455A /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
+		E5490F5E1BADCD0000A1455A /* Quicksand_Dash.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quicksand_Dash.otf; sourceTree = "<group>"; };
+		E5490FA21BADDAA600A1455A /* LostPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostPasswordViewController.h; sourceTree = "<group>"; };
+		E5490FA31BADDAA600A1455A /* LostPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostPasswordViewController.m; sourceTree = "<group>"; };
 		E54CE8BA1B75271500B92EDF /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
 		E54CE8BB1B75271500B92EDF /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		E54CE8BD1B75276200B92EDF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E54CE8BE1B75276200B92EDF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E568B7551BA5E177002641A7 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		E568B7561BA5E177002641A7 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		E568B7581BA5EB0A002641A7 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		E568B7591BA5EB0A002641A7 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
 		E56F3D371B76557000A49226 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		E56F3D391B76558500A49226 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		E56F3D3A1B76558500A49226 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
@@ -223,6 +261,8 @@
 		E5834E0E1B7F415C007C8889 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		E5834E0F1B7F415C007C8889 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
 		E5834E101B7F415C007C8889 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		E5946F471BBC60A20044043F /* CreateAccountSecondStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountSecondStepViewController.h; sourceTree = "<group>"; };
+		E5946F481BBC60A20044043F /* CreateAccountSecondStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountSecondStepViewController.m; sourceTree = "<group>"; };
 		E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomListingTableViewCell.h; sourceTree = "<group>"; };
 		E5A4B71A1B7A78AD005A58ED /* CustomListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomListingTableViewCell.m; sourceTree = "<group>"; };
 		E5A4B71B1B7A78AD005A58ED /* CustomListingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomListingTableViewCell.xib; sourceTree = "<group>"; };
@@ -400,6 +440,7 @@
 		E53663AB1B728389005A1E92 = {
 			isa = PBXGroup;
 			children = (
+				E5490F501BADCCFF00A1455A /* Fonts */,
 				E5AA21AD1B7F69E100BE279C /* healthfitnessrevolution-com.jpg */,
 				E5AA21AF1B7F6A4600BE279C /* uber-logo.jpg */,
 				E5B9CC081BA1F0AF0051BE47 /* Api Wrapper */,
@@ -465,6 +506,27 @@
 				E53663D51B72838B005A1E92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5490F501BADCCFF00A1455A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5490F511BADCCFF00A1455A /* Quicksand Bold Oblique.otf */,
+				E5490F521BADCCFF00A1455A /* Quicksand Bold.otf */,
+				E5490F531BADCCFF00A1455A /* Quicksand Book Oblique.otf */,
+				E5490F541BADCCFF00A1455A /* Quicksand Book.otf */,
+				E5490F551BADCCFF00A1455A /* Quicksand Dash.otf */,
+				E5490F561BADCCFF00A1455A /* Quicksand Light Oblique.otf */,
+				E5490F571BADCCFF00A1455A /* Quicksand Light.otf */,
+				E5490F581BADCCFF00A1455A /* Quicksand-Bold.otf */,
+				E5490F591BADCCFF00A1455A /* Quicksand-BoldItalic.otf */,
+				E5490F5A1BADCCFF00A1455A /* Quicksand-Italic.otf */,
+				E5490F5B1BADCCFF00A1455A /* Quicksand-Light.otf */,
+				E5490F5C1BADCCFF00A1455A /* Quicksand-LightItalic.otf */,
+				E5490F5D1BADCCFF00A1455A /* Quicksand-Regular.otf */,
+				E5490F5E1BADCD0000A1455A /* Quicksand_Dash.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E54CE8C31B75442700B92EDF /* Custom Views */ = {
@@ -559,6 +621,14 @@
 				E5834E061B7F3A7D007C8889 /* AutoCompletionTableViewController.h */,
 				E5834E071B7F3A7D007C8889 /* AutoCompletionTableViewController.m */,
 				E5834E081B7F3A7E007C8889 /* AutoCompletionTableViewController.xib */,
+				E568B7551BA5E177002641A7 /* CreateAccountViewController.h */,
+				E568B7561BA5E177002641A7 /* CreateAccountViewController.m */,
+				E568B7581BA5EB0A002641A7 /* EntryViewController.h */,
+				E568B7591BA5EB0A002641A7 /* EntryViewController.m */,
+				E5490FA21BADDAA600A1455A /* LostPasswordViewController.h */,
+				E5490FA31BADDAA600A1455A /* LostPasswordViewController.m */,
+				E5946F471BBC60A20044043F /* CreateAccountSecondStepViewController.h */,
+				E5946F481BBC60A20044043F /* CreateAccountSecondStepViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -645,6 +715,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5490F641BADCD0000A1455A /* Quicksand Light Oblique.otf in Resources */,
 				929B976D1B77D47D00F43858 /* com_screen@2x.png in Resources */,
 				929B97681B77D47D00F43858 /* blue_bg.png in Resources */,
 				E5DD7A301B73CFA100E93C01 /* temp.storyboard in Resources */,
@@ -658,10 +729,14 @@
 				929B97781B77D47D00F43858 /* select_skill_cross.png in Resources */,
 				929B97701B77D47D00F43858 /* edit_skill.png in Resources */,
 				E53663C61B72838B005A1E92 /* Main.storyboard in Resources */,
+				E5490F6A1BADCD0000A1455A /* Quicksand-LightItalic.otf in Resources */,
 				929B97811B77D47D00F43858 /* splash_750.png in Resources */,
 				929B977B1B77D47D00F43858 /* select_skill_tick@2x.png in Resources */,
+				E5490F621BADCD0000A1455A /* Quicksand Book.otf in Resources */,
 				929B97771B77D47D00F43858 /* select_skill@2x.png in Resources */,
+				E5490F661BADCD0000A1455A /* Quicksand-Bold.otf in Resources */,
 				929B977F1B77D47D00F43858 /* splash_640X1136.png in Resources */,
+				E5490F5F1BADCD0000A1455A /* Quicksand Bold Oblique.otf in Resources */,
 				929B97591B77D47D00F43858 /* app_icon_120.png in Resources */,
 				92F4CFE11B7A66A800B85010 /* fb@2x.png in Resources */,
 				92F4CFE71B7A66A800B85010 /* login_with_email@2x.png in Resources */,
@@ -669,14 +744,20 @@
 				929B976C1B77D47D00F43858 /* com_screen.png in Resources */,
 				929B976B1B77D47D00F43858 /* cancel_skill@2x.png in Resources */,
 				929B97731B77D47D00F43858 /* nav@2x.png in Resources */,
+				E5490F6C1BADCD0000A1455A /* Quicksand_Dash.otf in Resources */,
 				929B975D1B77D47D00F43858 /* app_icon_87.png in Resources */,
 				929B975E1B77D47D00F43858 /* bg_1242x2016.png in Resources */,
+				E5490F601BADCD0000A1455A /* Quicksand Bold.otf in Resources */,
+				E5490F631BADCD0000A1455A /* Quicksand Dash.otf in Resources */,
 				929B976A1B77D47D00F43858 /* cancel_skill.png in Resources */,
+				E5490F6B1BADCD0000A1455A /* Quicksand-Regular.otf in Resources */,
 				929B975A1B77D47D00F43858 /* app_icon_180.png in Resources */,
 				E53663CB1B72838B005A1E92 /* LaunchScreen.xib in Resources */,
+				E5490F611BADCD0000A1455A /* Quicksand Book Oblique.otf in Resources */,
 				E5834E051B7F2FC9007C8889 /* EditSkillCollectionViewCell.xib in Resources */,
 				E5A4B71D1B7A78AD005A58ED /* CustomListingTableViewCell.xib in Resources */,
 				929B97621B77D47D00F43858 /* bg2_1242x2016.png in Resources */,
+				E5490F651BADCD0000A1455A /* Quicksand Light.otf in Resources */,
 				929B97791B77D47D00F43858 /* select_skill_cross@2x.png in Resources */,
 				929B976E1B77D47D00F43858 /* computer.png in Resources */,
 				E5AA21AE1B7F69E100BE279C /* healthfitnessrevolution-com.jpg in Resources */,
@@ -684,6 +765,7 @@
 				929B977C1B77D47D00F43858 /* sidebar_bluebg.png in Resources */,
 				92F4CFE21B7A66A800B85010 /* fb@3x.png in Resources */,
 				E5834E0A1B7F3A7E007C8889 /* AutoCompletionTableViewController.xib in Resources */,
+				E5490F681BADCD0000A1455A /* Quicksand-Italic.otf in Resources */,
 				92F4CFD31B7A60AA00B85010 /* logo@3x.png in Resources */,
 				929B975C1B77D47D00F43858 /* app_icon_80.png in Resources */,
 				9236C71D1B7F9EBD00A1D3C1 /* health.jpg in Resources */,
@@ -694,6 +776,7 @@
 				929B97801B77D47D00F43858 /* splash_640X960.png in Resources */,
 				92F4CFD21B7A60AA00B85010 /* logo@2x.png in Resources */,
 				92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */,
+				E5490F671BADCD0000A1455A /* Quicksand-BoldItalic.otf in Resources */,
 				929B977E1B77D47D00F43858 /* splash_1242.png in Resources */,
 				929B97601B77D47D00F43858 /* bg_640x832.png in Resources */,
 				929B97641B77D47D00F43858 /* bg2_640x960.png in Resources */,
@@ -702,6 +785,7 @@
 				E56F3D381B76557000A49226 /* MapView.xib in Resources */,
 				929B97661B77D47D00F43858 /* back.png in Resources */,
 				929B977D1B77D47D00F43858 /* sidebar_bluebg@2x.png in Resources */,
+				E5490F691BADCD0000A1455A /* Quicksand-Light.otf in Resources */,
 				929B977A1B77D47D00F43858 /* select_skill_tick.png in Resources */,
 				929B97691B77D47D00F43858 /* blue_bg@2x.png in Resources */,
 				929B97751B77D47D00F43858 /* nav_bg@2x.png in Resources */,
@@ -771,6 +855,8 @@
 				E5A4B71C1B7A78AD005A58ED /* CustomListingTableViewCell.m in Sources */,
 				E5834E091B7F3A7E007C8889 /* AutoCompletionTableViewController.m in Sources */,
 				E5AA4EE51B7E7B4000EE01B3 /* PlatformListingsDetailsViewController.m in Sources */,
+				E568B7571BA5E177002641A7 /* CreateAccountViewController.m in Sources */,
+				E5946F491BBC60A20044043F /* CreateAccountSecondStepViewController.m in Sources */,
 				E5834E041B7F2FC9007C8889 /* EditSkillCollectionViewCell.m in Sources */,
 				929B97841B77E08B00F43858 /* UIView+BorderColorWithRadius.m in Sources */,
 				92D8066C1B7E5FDB0075A220 /* LoginViewController.m in Sources */,
@@ -779,9 +865,11 @@
 				E5834E111B7F415C007C8889 /* WYPopoverController.m in Sources */,
 				929B97281B77D31900F43858 /* AccountViewController.m in Sources */,
 				92A9B95D1B7F19E1000B3963 /* EditSkillViewController.m in Sources */,
+				E568B75A1BA5EB0A002641A7 /* EntryViewController.m in Sources */,
 				E53663BA1B72838A005A1E92 /* main.m in Sources */,
 				E56F3D3B1B76558500A49226 /* MapView.m in Sources */,
 				E5834DFF1B7F20AF007C8889 /* EditSkillsViewController.m in Sources */,
+				E5490FA41BADDAA600A1455A /* LostPasswordViewController.m in Sources */,
 				92D9379D1B7E72E400D4B551 /* SkillsViewController.m in Sources */,
 				92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */,
 				E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */,

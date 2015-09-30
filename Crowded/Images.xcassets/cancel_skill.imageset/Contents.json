@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "cancel_skill.png"
+      "filename" : "cross.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "cancel_skill@2x.png"
+      "filename" : "cross@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "cancel_skill@3x.png"
+      "filename" : "cross@3x.png"
     }
   ],
   "info" : {
