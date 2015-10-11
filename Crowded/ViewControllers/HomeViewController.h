@@ -17,6 +17,7 @@
     CGRect viewBounds;
     
 }
+@property(strong,nonatomic)NSMutableArray *platformArray;
 @property (strong, nonatomic) IBOutlet UITableView *listTableView;
 @property (weak, nonatomic)   IBOutlet UIView *bannerView;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;

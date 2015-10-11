@@ -318,7 +318,7 @@ forHTTPHeaderField:(NSString *)field
 }
 
 - (void)setAuthorizationHeaderFieldWithToken:(NSString *)token {
-    [self setValue:[NSString stringWithFormat:@"Token token=\"%@\"", token] forHTTPHeaderField:@"Authorization"];
+    [self setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
 }
 
 - (void)clearAuthorizationHeader {

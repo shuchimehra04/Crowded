@@ -18,21 +18,16 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    UIImage *image = [UIImage imageNamed:@"nav_bg.png"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
-    imageView.frame = CGRectMake(0, 0, 320, 44);
-    [self.navigationController.navigationBar addSubview:imageView];
-    
     [self setTitle:@"Account Settings"];
-    [[[self navigationController] navigationBar] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:2/255.0 green:0/255.0 blue:80/255.0 alpha:1.0f]}];
+ [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
     
-    [UITextField changeBorderColor:accountTitleTF];
-    [UITextField changeBorderColor:emailAddressTF];
-    [UITextField changeBorderColor:changePasswordTF];
-    [UITextField changeBorderColor:homeLocationTF];
-
-    [UIButton makeCornerRadiusOfView:saveButton withRadius:3.0f];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_image"]]];
+    [self.account_bg setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4]];
+    [self.change_loc_view setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4]];
+    
+    [self.change_password_vew setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4]];
+    
+    [self.email_view setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4]];
 }
 
 -(IBAction)saveButtonTapped:(UIButton *)sender

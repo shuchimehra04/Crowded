@@ -19,13 +19,19 @@
     [super viewDidLoad];
     self.skillsArray = [[NSMutableArray alloc] initWithObjects:@"COOKING",@"DOG SITTING",@"DRIVING",@"C++",@"SERVING",@"VOLUNTEERING",@"PROGRAMMING",@"IPHONE", nil];
     
-    UIImage *image = [UIImage imageNamed:@"nav_bg.png"];
+    UIImage *image = [UIImage imageNamed:@""];
     UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
     imageView.frame = CGRectMake(0, 0, 320, 44);
-    [self.navigationController.navigationBar addSubview:imageView];
+    [imageView setBackgroundColor:[UIColor colorWithRed:49.0/255.0 green:51.0/255.0 blue:53.0/255.0 alpha:1.0f]];
     
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:106.0/255.0 green:193.0/255.0 blue:211.0/255.0 alpha:1.0f]];
+
+    
+    [self.navigationController.navigationBar addSubview:imageView];
+   [[[self navigationController] navigationBar] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:106.0/255.0 green:193.0/255.0 blue:211.0/255.0 alpha:1.0f]}];
     
     [self setTitle:@"Skills"];
+    
     
     
     UIButton *editSkillButton = [UIButton buttonWithType:UIButtonTypeCustom];

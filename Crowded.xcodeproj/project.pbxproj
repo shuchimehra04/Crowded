@@ -74,6 +74,8 @@
 		92F4CFED1B7A725100B85010 /* create_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEA1B7A725100B85010 /* create_account@2x.png */; };
 		92F4CFEE1B7A725100B85010 /* create_account@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F4CFEB1B7A725100B85010 /* create_account@3x.png */; };
 		92F5B7AB1B791F4200B111E8 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F5B7AA1B791F4200B111E8 /* SettingViewController.m */; };
+		E509A94D1BBDA24700DFB25E /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E509A94B1BBDA24700DFB25E /* LeftMenuTableViewCell.m */; };
+		E509A94E1BBDA24700DFB25E /* LeftMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E509A94C1BBDA24700DFB25E /* LeftMenuTableViewCell.xib */; };
 		E53663BA1B72838A005A1E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663B91B72838A005A1E92 /* main.m */; };
 		E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E53663BC1B72838A005A1E92 /* AppDelegate.m */; };
 		E53663C01B72838A005A1E92 /* Crowded.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E53663BE1B72838A005A1E92 /* Crowded.xcdatamodeld */; };
@@ -209,6 +211,9 @@
 		92F5B7A71B79195F00B111E8 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = ../Constant.h; sourceTree = "<group>"; };
 		92F5B7A91B791F4200B111E8 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		92F5B7AA1B791F4200B111E8 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E509A94A1BBDA24700DFB25E /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		E509A94B1BBDA24700DFB25E /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		E509A94C1BBDA24700DFB25E /* LeftMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuTableViewCell.xib; sourceTree = "<group>"; };
 		E53663B41B72838A005A1E92 /* Crowded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crowded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53663B81B72838A005A1E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53663B91B72838A005A1E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -574,6 +579,9 @@
 			isa = PBXGroup;
 			children = (
 				92D9379E1B7E7BE300D4B551 /* SkillTableCell.h */,
+				E509A94A1BBDA24700DFB25E /* LeftMenuTableViewCell.h */,
+				E509A94B1BBDA24700DFB25E /* LeftMenuTableViewCell.m */,
+				E509A94C1BBDA24700DFB25E /* LeftMenuTableViewCell.xib */,
 				92D9379F1B7E7BE300D4B551 /* SkillTableCell.m */,
 				92D937A11B7E7C1B00D4B551 /* SkillTableCell.xib */,
 				E5A4B7191B7A78AD005A58ED /* CustomListingTableViewCell.h */,
@@ -722,6 +730,7 @@
 				92F4CFE81B7A66A800B85010 /* login_with_email@3x.png in Resources */,
 				92F4CFE51B7A66A800B85010 /* linkedin@3x.png in Resources */,
 				929B976F1B77D47D00F43858 /* computer@2x.png in Resources */,
+				E509A94E1BBDA24700DFB25E /* LeftMenuTableViewCell.xib in Resources */,
 				92F4CFEE1B7A725100B85010 /* create_account@3x.png in Resources */,
 				92F4CFE61B7A66A800B85010 /* login_with_email.png in Resources */,
 				929B97711B77D47D00F43858 /* edit_skill@2x.png in Resources */,
@@ -848,6 +857,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DD7A401B73D56800E93C01 /* ViewController.m in Sources */,
+				E509A94D1BBDA24700DFB25E /* LeftMenuTableViewCell.m in Sources */,
 				E5834E121B7F415C007C8889 /* WYStoryboardPopoverSegue.m in Sources */,
 				E53663BD1B72838A005A1E92 /* AppDelegate.m in Sources */,
 				92D937A01B7E7BE300D4B551 /* SkillTableCell.m in Sources */,
@@ -932,7 +942,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -952,6 +963,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3cb29478-3a99-4a50-85d9-354f08f75753";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -973,7 +985,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -986,6 +999,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3cb29478-3a99-4a50-85d9-354f08f75753";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -997,10 +1011,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3cb29478-3a99-4a50-85d9-354f08f75753";
 			};
 			name = Debug;
 		};
@@ -1010,10 +1031,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Fable Technologies India (847LC32JQH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Crowded/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3cb29478-3a99-4a50-85d9-354f08f75753";
 			};
 			name = Release;
 		};

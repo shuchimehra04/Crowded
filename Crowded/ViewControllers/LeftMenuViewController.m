@@ -12,6 +12,7 @@
 #import "SlideNavigationContorllerAnimatorScale.h"
 #import "SlideNavigationContorllerAnimatorScaleAndFade.h"
 #import "SlideNavigationContorllerAnimatorSlideAndFade.h"
+#import "LeftMenuTableViewCell.h"
 
 @implementation LeftMenuViewController
 
@@ -29,12 +30,9 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
-	self.tableView.separatorColor = [UIColor lightGrayColor];
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_image"]]];
     
-	UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftMenu.jpg"]];
-	self.tableView.backgroundView = imageView;
+    [self.tableView registerNib:[UINib nibWithNibName:@"LeftMenuTableViewCell" bundle:nil] forCellReuseIdentifier:@"LeftMenuTableViewCellId"];
     
     
 }
@@ -43,7 +41,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 5;
+	return 6;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -65,31 +63,47 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"leftMenuCell"];
-	
+  LeftMenuTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"LeftMenuTableViewCellId" forIndexPath:indexPath];
+    
 	switch (indexPath.row)
 	{
 		case 0:
-			cell.textLabel.text = @"SKILLS";
+			cell.label.text = @"SKILLS";
+            cell.imageview.image=[UIImage imageNamed:@"tick1"];
 			break;
 			
 		case 1:
-			cell.textLabel.text = @"ACCOUNT";
+			cell.label.text = @"ACCOUNT";
+            cell.imageview.image=[UIImage imageNamed:@"account"];
+
 			break;
 			
 		case 2:
-			cell.textLabel.text = @"SETTINGS";
+			cell.label.text = @"SETTINGS";
+            cell.imageview.image=[UIImage imageNamed:@"setting"];
+
 			break;
 			
 		case 3:
-			cell.textLabel.text = @"PLATFORM";
+			cell.label.text = @"PLATFORMS";
+            cell.imageview.image=[UIImage imageNamed:@"platform"];
+
 			break;
         case 4:
-            cell.textLabel.text = @"LOGOUT";
+            cell.label.text = @"TUTORIAL";
+            cell.imageview.image=[UIImage imageNamed:@"tutorial"];
+            
+            break;
+
+        case 5:
+            cell.label.text = @"LOGOUT";
+            cell.imageview.image=[UIImage imageNamed:@"logout"];
+
             break;
 	}
-	
-	cell.backgroundColor = [UIColor clearColor];
+	cell.alphaView.backgroundColor=[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+    
+    cell.backgroundColor = [UIColor clearColor];
 	
 	return cell;
 }

@@ -10,5 +10,6 @@
 extern NSString *const kCustomListingTableViewCellReuseID;
 @interface CustomListingTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *priceLAbel;
+@property (weak, nonatomic) IBOutlet UIView *bg_view;
 
 @end

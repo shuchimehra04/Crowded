@@ -28,6 +28,9 @@ typedef void (^CrowdedApiBatchCompletionBlock)(NSArray *operations);
 - (void)registerUserSecondStep:(NSString *)emailId success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure;
 // http://apidev.crowded.com/user/maho@test.com
 -(void)loginUser:(NSString *)username andPassword:(NSString *)password success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure;
+-(void)loginUser:(NSString *)username andID:(NSString *)Id andType:(NSString *)type success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure;
+//http://apidev.crowded.com/user?email=<EMAIL>&facebookId=<FACEBOOK_ID>
 -(void)forgotPassword:(NSString *)username success:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure;
+-(void)getPlatformListingsuccess:(CrowdedApiSuccessBlock)success failure:(CrowdedApiFailureBlock)failure;
 
 @end

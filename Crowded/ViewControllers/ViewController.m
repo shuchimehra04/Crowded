@@ -25,6 +25,8 @@
     self.limitPanGestureSwitch.on = ([SlideNavigationController sharedInstance].panGestureSideOffset == 0) ? NO : YES;
     self.slideOutAnimationSwitch.on = ((LeftMenuViewController *)[SlideNavigationController sharedInstance].leftMenu).slideOutAnimationEnabled;
     [self setUpSegmentControl];
+    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:106.0/255.0 green:193.0/255.0 blue:211.0/255.0 alpha:1.0f]];
+    
 
    HomeViewController *home= [self.childViewControllers objectAtIndex:0];
     home.delegate=self;
@@ -61,23 +63,19 @@
 }
 -(void)setUpSegmentControl
 {
-    UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"map", @"list", nil]];
+    UISegmentedControl *statFilter = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:[[UIImage imageNamed:@"globe"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ], [[UIImage imageNamed:@"computer"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal], nil]];
     
-    [statFilter setFrame:CGRectMake(0, -10,140, 35)];
+    [statFilter setFrame:CGRectMake(0, -10,100, 35)];
     [statFilter addTarget:self action:@selector(segmentControlAction:) forControlEvents:UIControlEventValueChanged];
-    [statFilter.layer setBorderColor:[UIColor whiteColor].CGColor];
-    [statFilter.layer setBorderWidth:1.0f];
-    statFilter.layer.cornerRadius=5.0f;
-    [statFilter setBackgroundColor:[UIColor blackColor]];
+ 
     [statFilter setSelectedSegmentIndex:0];
+    [statFilter setTintColor:[UIColor clearColor]];
     
-    UIColor *tintcolor=[UIColor colorWithRed:36.0/255.0 green:167.0/255.0 blue:250.0/255.0 alpha:1.0];
+    UIColor *tintcolor=[UIColor clearColor];
     
     [[statFilter.subviews objectAtIndex:0] setTintColor:tintcolor];
     
-    [statFilter setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:16.0],NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
-    [statFilter setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:16.0],NSForegroundColorAttributeName:[UIColor colorWithRed:3.0/255.0 green:-0/255.0 blue:102.0/255.0 alpha:1.0f]} forState:UIControlStateSelected];
-    
+        
     self.navigationItem.titleView = statFilter;
 //    NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil];
 //    MapView *mapView = [nibObjects objectAtIndex:0];
@@ -96,12 +94,12 @@
     {
         if ([[sender.subviews objectAtIndex:i]isSelected] )
         {
-            UIColor *tintcolor=[UIColor colorWithRed:36.0/255.0 green:167.0/255.0 blue:250.0/255.0 alpha:1.0];
+            UIColor *tintcolor=[UIColor clearColor];
             [[sender.subviews objectAtIndex:i] setTintColor:tintcolor];
         }
         else
         {
-            [[sender.subviews objectAtIndex:i] setTintColor:[UIColor blackColor]];
+            [[sender.subviews objectAtIndex:i] setTintColor:[UIColor clearColor]];
         }
     }
     if(sender.selectedSegmentIndex==0)

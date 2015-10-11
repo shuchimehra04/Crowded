@@ -9,8 +9,11 @@
 #import "HomeViewController.h"
 #import "LeftMenuViewController.h"
 #import "CustomListingTableViewCell.h"
+#import "CrowdedApiWrapper.h"
 
 @implementation HomeViewController
+
+
 
 - (void)viewDidLoad
 {
@@ -24,13 +27,21 @@
    
     [self setUpProfileView];
     viewBounds=self.listTableView.bounds;
- [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
+     [self.listTableView registerNib:[UINib nibWithNibName:NSStringFromClass([CustomListingTableViewCell class]) bundle:nil] forCellReuseIdentifier:kCustomListingTableViewCellReuseID];
   // [self setUpProfileView];
 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [[CrowdedApiWrapper instance] getPlatformListingsuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@",responseObject);
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:62.0/255.0 green:65.0/255.0 blue:68.0/255.0 alpha:1.0f]];
 }
 
@@ -63,6 +74,17 @@
     
     CustomListingTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:kCustomListingTableViewCellReuseID forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    NSInteger num;
+    if (indexPath.row % 2)
+    {
+        cell.bg_view.backgroundColor=[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0f];
+        
+    }
+    else
+    {
+     cell.bg_view.backgroundColor=[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0f];
+    }
+            // even
     //cell.contentMode=UIViewContentModeRedraw;
    // cell.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 
